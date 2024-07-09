@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEngine;
 using Newtonsoft.Json;
 
-public class GenMap : Singleton<GenMap>
+public class MapManager : Singleton<MapManager>
 {
     public DataLevel dataLevels;
 
@@ -12,11 +12,11 @@ public class GenMap : Singleton<GenMap>
     protected override void Awake()
     {
         base.Awake();
-        GenMapInit();
+        MapInit();
 
     }
 
-    private void GenMapInit()
+    private void MapInit()
     {
         baseLevel = new MDBaseLevel();
 
@@ -95,31 +95,6 @@ public class GenMap : Singleton<GenMap>
             baseLevel = JsonConvert.DeserializeObject<MDBaseLevel>(PlayerPrefs.GetString(Constans.DATA_LEVEL));
         }
     }
-
-
-    protected void LoadDataPerLevel(LevelElement levelElement, MDLevel data)
-    {
-       
-    }
-
-
-
-    protected void AddObjectInLevel(LevelElement levelElement, List<int> valueInLevel, int add)
-    {
-    }
-
-
-
-    protected void AddValueHasTubeInLevel(MDLevel data, List<int> valueInLevel, int add)
-    {
-    }
-
-
-
-    protected void AddValueNotTubeInLevel(LevelElement levelElement, MDLevel data)
-    {
-    }
-
 
     public MDLevel GetLevel(int value)
     {

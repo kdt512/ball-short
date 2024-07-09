@@ -5,9 +5,9 @@ public class DataProvider : Singleton<DataProvider>
     public BackgroundData backgroundData;
     public BottleData BottleData;
 
-    public int coinGetItemInShop;
-    public int coinAdsInShop;
-    public int valueStarClaim;
+    public int coinShop;
+    public int coinAds;
+    public int starClaim;
 
 #if UNITY_EDITOR
     public static bool isPlayLoading = false;

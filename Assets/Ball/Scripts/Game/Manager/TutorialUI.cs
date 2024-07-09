@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class TutorialUI : BaseUI
+public class TutorialUI : BasePopup
 {
     [SerializeField] protected GameObject tut1;
     [SerializeField] protected GameObject handTut1;
@@ -110,7 +110,7 @@ public class TutorialUI : BaseUI
         if (indexStepTut2 == 5)
         {
             UIManager.Instance.CloseUI<TutorialUI>(DialogType.TUTORIAL);
-            UIManager.Instance.OpenUI<CompleteTutorialUI>(DialogType.COMPLETE_TUTORIAL);
+            UIManager.Instance.OpenUI<CompleteTutorialPopup>(DialogType.COMPLETE_TUTORIAL);
         }
     }
 

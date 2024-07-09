@@ -1,7 +1,7 @@
 using UnityEngine;
 //DONE
 
-public class BaseUI : MonoBehaviour
+public class BasePopup : MonoBehaviour
 {
 	public DialogType _dialogType;
 

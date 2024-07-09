@@ -379,7 +379,7 @@ GameObject:
   - component: {fileID: 295856495073749027}
   - component: {fileID: 295856495073749024}
   m_Layer: 5
-  m_Name: OpenGiftUI
+  m_Name: OpenGiftPopup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

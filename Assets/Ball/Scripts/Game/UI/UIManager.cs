@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class UIManager : Singleton<UIManager>
 {
-    [SerializeField] private List<BaseUI> listBaseUI = new List<BaseUI>();
+    [SerializeField] private List<BasePopup> listBaseUI = new List<BasePopup>();
 
     [SerializeField] private Transform contents;
 
-    private Dictionary<DialogType, BaseUI> uiDic = new Dictionary<DialogType, BaseUI>();
-    private BaseUI currentUI;
+    private Dictionary<DialogType, BasePopup> uiDic = new Dictionary<DialogType, BasePopup>();
+    private BasePopup currentUI;
 
     [HideInInspector] public GameplayUI gameplayUI;
 
@@ -37,7 +37,7 @@ public class UIManager : Singleton<UIManager>
     }
 
 
-    public T OpenUI<T>(DialogType dialogType) where T : BaseUI
+    public T OpenUI<T>(DialogType dialogType) where T : BasePopup
     {
         if (uiDic.TryGetValue(dialogType, out var ui))
         {
@@ -67,7 +67,7 @@ public class UIManager : Singleton<UIManager>
         return currentUI as T;
     }
 
-    public void CloseUI<T>(DialogType type) where T : BaseUI
+    public void CloseUI<T>(DialogType type) where T : BasePopup
     {
         T t = GetUI<T>(type);
         t.Close();
@@ -87,7 +87,7 @@ public class UIManager : Singleton<UIManager>
     }
 
 
-    public T GetUI<T>(DialogType dialogType) where T : BaseUI
+    public T GetUI<T>(DialogType dialogType) where T : BasePopup
     {
         if (currentUI == null || currentUI._dialogType != dialogType)
         {

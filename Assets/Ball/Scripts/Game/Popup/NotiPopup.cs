@@ -2,7 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 //DONE
-public class NotiUI : BaseUI
+public class NotiPopup : BasePopup
 {
 	[SerializeField]
 	private TextMeshProUGUI _titleTxt;

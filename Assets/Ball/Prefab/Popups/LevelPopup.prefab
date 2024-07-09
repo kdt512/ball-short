@@ -337,7 +337,7 @@ GameObject:
   - component: {fileID: 6979301389480019455}
   - component: {fileID: 6979301389480019454}
   m_Layer: 5
-  m_Name: LevelUI
+  m_Name: LevelPopup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

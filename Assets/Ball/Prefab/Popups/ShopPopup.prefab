@@ -1424,7 +1424,7 @@ GameObject:
   - component: {fileID: 7746240006935146177}
   - component: {fileID: 7746240006935146176}
   m_Layer: 5
-  m_Name: ShopUI
+  m_Name: ShopPopup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1464,7 +1464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogType: 1
   _backgroundData: {fileID: 11400000, guid: 265d5189d23371844bd7a40f214653d5, type: 2}
-  _holderData: {fileID: 11400000, guid: e1498ce0cc865614da2a8b0a08c3af7f, type: 2}
+  _BottleData: {fileID: 11400000, guid: e1498ce0cc865614da2a8b0a08c3af7f, type: 2}
   _ballData: {fileID: 11400000, guid: 63ecf2aace89eba4b84d8405ba33181c, type: 2}
   _itemShopUIPrefab: {fileID: 275413328651393189, guid: b9efc0813930631409d3637334a7f810, type: 3}
   contents: {fileID: 7746240008138871529}
@@ -1473,6 +1473,8 @@ MonoBehaviour:
   txtTitle: {fileID: 7746240006068836270}
   bntReward: {fileID: 7746240007864644661}
   imageBntDisable: {fileID: 3883785114290251773}
+  maxTimeBntDisable: 0
+  currentTimeBntDisable: 0
   btnBuy: {fileID: 7746240007821785893}
 --- !u!1 &7746240007312129429
 GameObject:
@@ -2068,7 +2070,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
+  m_fontSize: 2
   m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2336,7 +2338,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
+  m_fontSize: 2
   m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 1

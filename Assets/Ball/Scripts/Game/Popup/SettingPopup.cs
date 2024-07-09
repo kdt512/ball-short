@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 //DONE
-public class SettingUI : BaseUI
+public class SettingPopup : BasePopup
 {
     [SerializeField] private Image imgBtnSound;
 
@@ -79,14 +79,14 @@ public class SettingUI : BaseUI
     public void OnClickShop()
     {
         SoundManager.Instance.Play(SoundType.CLICK);
-        UIManager.Instance.OpenUI<BaseUI>(DialogType.SHOP);
+        UIManager.Instance.OpenUI<BasePopup>(DialogType.SHOP);
     }
 
 
     public void OnClickLevel()
     {
         SoundManager.Instance.Play(SoundType.CLICK);
-        UIManager.Instance.OpenUI<BaseUI>(DialogType.LEVEL);
+        UIManager.Instance.OpenUI<BasePopup>(DialogType.LEVEL);
     }
 
 
@@ -110,13 +110,13 @@ public class SettingUI : BaseUI
     public void OnClickNoAds()
     {
         SoundManager.Instance.Play(SoundType.CLICK);
-        UIManager.Instance.OpenUI<BaseUI>(DialogType.NO_ADS);
+        UIManager.Instance.OpenUI<BasePopup>(DialogType.NO_ADS);
     }
 
 
     public void OnClickRestore()
     {
         SoundManager.Instance.Play(SoundType.CLICK);
-        UIManager.Instance.CloseUI<SettingUI>(DialogType.SETTING);
+        UIManager.Instance.CloseUI<SettingPopup>(DialogType.SETTING);
     }
 }

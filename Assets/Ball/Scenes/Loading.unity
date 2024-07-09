@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 4462470}
   - component: {fileID: 4462469}
   m_Layer: 5
-  m_Name: LoadingTxt
+  m_Name: LoadingLbl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -288,9 +288,9 @@ MonoBehaviour:
   ballData: {fileID: 11400000, guid: 63ecf2aace89eba4b84d8405ba33181c, type: 2}
   backgroundData: {fileID: 11400000, guid: 265d5189d23371844bd7a40f214653d5, type: 2}
   BottleData: {fileID: 11400000, guid: e1498ce0cc865614da2a8b0a08c3af7f, type: 2}
-  coinGetItemInShop: 1000
-  coinAdsInShop: 200
-  valueStarClaim: 0
+  coinShop: 1000
+  coinAds: 200
+  starClaim: 0
 --- !u!4 &22645641
 Transform:
   m_ObjectHideFlags: 0
@@ -981,7 +981,7 @@ GameObject:
   - component: {fileID: 1963254677}
   - component: {fileID: 1963254678}
   m_Layer: 0
-  m_Name: GenMap
+  m_Name: MapManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

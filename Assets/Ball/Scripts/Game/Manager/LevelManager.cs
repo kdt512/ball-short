@@ -129,7 +129,7 @@ public class LevelManager : Singleton<LevelManager>
 
     protected void SpawnTube()
     {
-        levelElement = GenMap.Instance.dataLevels.GetLevel(DataManager.CurrentNormalLevel);
+        levelElement = MapManager.Instance.dataLevels.GetLevel(DataManager.CurrentNormalLevel);
 
         if (levelElement != null)
         {
@@ -140,7 +140,7 @@ public class LevelManager : Singleton<LevelManager>
             wTube = spriteTube.rect.width / spriteTube.pixelsPerUnit;
             List<Vector3> postion = SetupPositionTube(countTube, wTube, out var maxCountInRow);
 
-            var baseLevel = GenMap.Instance.GetLevel(DataManager.CurrentNormalLevel);
+            var baseLevel = MapManager.Instance.GetLevel(DataManager.CurrentNormalLevel);
             if (baseLevel != null)
             {
                 for (int j = 0; j < countTube; j++)
@@ -244,7 +244,7 @@ public class LevelManager : Singleton<LevelManager>
                             DOVirtual.DelayedCall(.3f, () => { fxWin.gameObject.SetActive(true); });
                             DOVirtual.DelayedCall(.6f, () =>
                             {
-                                UIManager.Instance.OpenUI<WinUI>(DialogType.WIN);
+                                UIManager.Instance.OpenUI<WinPopup>(DialogType.WIN);
                                 Debug.LogError("Win");
                             });
                         }

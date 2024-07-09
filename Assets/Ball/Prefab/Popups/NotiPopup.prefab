@@ -454,7 +454,7 @@ GameObject:
   - component: {fileID: 1313130187556445880}
   - component: {fileID: 1313130187556445881}
   m_Layer: 5
-  m_Name: NotiUI
+  m_Name: NotiPopup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

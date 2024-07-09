@@ -4,7 +4,7 @@ using System;
 using TMPro;
 using UnityEngine;
 
-public class WinUI : BaseUI
+public class WinPopup : BasePopup
 {
     [SerializeField] private TextMeshProUGUI _congratulationTxt;
 
@@ -96,7 +96,7 @@ public class WinUI : BaseUI
         }
 
         int index = LevelManager.Instance.StarClaimInLevel + 1;
-        DataProvider.Instance.valueStarClaim = index;
+        DataProvider.Instance.starClaim = index;
         NextLevel();
     }
 
@@ -112,7 +112,7 @@ public class WinUI : BaseUI
             //TrackingManager.Instance.LogEventLevelUp(DataManager.UnlockNormalLevel);
         }
 
-        DataProvider.Instance.valueStarClaim = LevelManager.Instance.StarClaimInLevel;
+        DataProvider.Instance.starClaim = LevelManager.Instance.StarClaimInLevel;
         NextLevel();
     }
 
@@ -140,14 +140,15 @@ public class WinUI : BaseUI
 
     private void NextLevel()
     {
-        if (isShowAds && DataManager.UnlockNormalLevel >= Constans.SHOW_ADS_LEVEL)
-        {
-            //AdmodManager.Instance.ShowInterstitial((t) => { GameManager.LoadGame(); });
-        }
-        else
-        {
-            GameManager.LoadGame();
-        }
+        //if (isShowAds && DataManager.UnlockNormalLevel >= Constans.SHOW_ADS_LEVEL)
+        //{
+        //    //AdmodManager.Instance.ShowInterstitial((t) => { GameManager.LoadGame(); });
+        //}
+        //else
+        //{
+        //    GameManager.LoadGame();
+        //}
+        GameManager.LoadGame();
 
         //DataOneLoad.RateUsIndex++;
     }

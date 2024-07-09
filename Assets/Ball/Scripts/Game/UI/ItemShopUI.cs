@@ -147,7 +147,7 @@ public class ItemShopUI : MonoBehaviour
     {
         if (!isLock)
         {
-            UIManager.Instance.GetUI<ShopUI>(DialogType.SHOP).OnClickItemShopUI(_id);
+            UIManager.Instance.GetUI<ShopPopup>(DialogType.SHOP).OnClickItemShopUI(_id);
         }
     }
 }

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RateUI : BaseUI
+public class RatePopup : BasePopup
 {
 	[SerializeField]
 	private List<GameObject> listStar = new List<GameObject>();
@@ -45,7 +45,7 @@ public class RateUI : BaseUI
 		SoundManager.Instance.Play(SoundType.CLICK);
 		DataManager.IsRate = true;
 
-		var notiUI = UIManager.Instance.OpenUI<NotiUI>(DialogType.POPUP_NOTI);
+		var notiUI = UIManager.Instance.OpenUI<NotiPopup>(DialogType.POPUP_NOTI);
 		notiUI.ShowAsInfo("Rating", "Thanks for your rating!");
 
 #if UNITY_ANDROID

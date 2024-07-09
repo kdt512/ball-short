@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ShopUI : BaseUI
+public class ShopPopup : BasePopup
 {
     [SerializeField] private BackgroundData _backgroundData;
 
@@ -46,8 +46,8 @@ public class ShopUI : BaseUI
 
         SetShow();
 
-        txtCoinGift.text = DataProvider.Instance.coinGetItemInShop.ToString();
-        txtCoinAds.text = DataProvider.Instance.coinAdsInShop.ToString();
+        txtCoinGift.text = DataProvider.Instance.coinShop.ToString();
+        txtCoinAds.text = DataProvider.Instance.coinAds.ToString();
 
         txtTitle.text = "THEME";
     }
@@ -157,15 +157,15 @@ public class ShopUI : BaseUI
 
     public void OnClickOpenGift()
     {
-        if (DataManager.COIN >= DataProvider.Instance.coinGetItemInShop)
+        if (DataManager.COIN >= DataProvider.Instance.coinShop)
         {
-            var openGiftUI = UIManager.Instance.OpenUI<OpenGiftUI>(DialogType.OPEN_GIFT);
+            var openGiftUI = UIManager.Instance.OpenUI<OpenGiftPopup>(DialogType.OPEN_GIFT);
             openGiftUI.SetGift(false);
             openGiftUI.SetData(currentItemShopType);
         }
         else
         {
-            var notiUI = UIManager.Instance.OpenUI<NotiUI>(DialogType.POPUP_NOTI);
+            var notiUI = UIManager.Instance.OpenUI<NotiPopup>(DialogType.POPUP_NOTI);
             notiUI.ShowAsInfo("Oops!", "Coin is not enough, please watch ads to get more coins!");
         }
     }
@@ -175,7 +175,7 @@ public class ShopUI : BaseUI
     {
         if (DataManager.IsDisableReward)
         {
-            var notiUI = UIManager.Instance.OpenUI<NotiUI>(DialogType.POPUP_NOTI);
+            var notiUI = UIManager.Instance.OpenUI<NotiPopup>(DialogType.POPUP_NOTI);
             notiUI.ShowAsInfo("NOTIFY!", "You click too match request ads! This button was disabled in 1 hour");
 
         }
@@ -205,7 +205,7 @@ public class ShopUI : BaseUI
             //    EventDispatcher.PostEvent(EventId.UPDATE_COIN);
             //});
 
-            DataManager.COIN += DataProvider.Instance.coinAdsInShop;
+            DataManager.COIN += DataProvider.Instance.coinAds;
             EventDispatcher.PostEvent(EventId.UPDATE_COIN);
         }
     }

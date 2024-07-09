@@ -194,19 +194,19 @@ public class GameplayUI : MonoBehaviour
             listStarYeallow[i].gameObject.SetActive(true);
         }
 
-        if (DataProvider.Instance.valueStarClaim > 0)
+        if (DataProvider.Instance.starClaim > 0)
         {
-            var valueStarClaim = DataProvider.Instance.valueStarClaim;
+            var valueStarClaim = DataProvider.Instance.starClaim;
             if (DataManager.ListStarLevelReceived.Count >= DataManager.CurrentNormalLevel)
             {
                 var index = Mathf.Max(DataManager.CurrentNormalLevel - 1, 0);
                 if (DataManager.ListStarLevelReceived[index] <
-                    DataProvider.Instance.valueStarClaim)
+                    DataProvider.Instance.starClaim)
                 {
-                    valueStarClaim = DataProvider.Instance.valueStarClaim -
+                    valueStarClaim = DataProvider.Instance.starClaim -
                                      DataManager.ListStarLevelReceived[index];
                     DataManager.SetList(Constans.LIST_STAR_LEVEL_RECEIVED, index,
-                        DataProvider.Instance.valueStarClaim);
+                        DataProvider.Instance.starClaim);
                 }
                 else
                 {
@@ -215,7 +215,7 @@ public class GameplayUI : MonoBehaviour
             }
             else
             {
-                DataManager.AddList(Constans.LIST_STAR_LEVEL_RECEIVED, DataProvider.Instance.valueStarClaim);
+                DataManager.AddList(Constans.LIST_STAR_LEVEL_RECEIVED, DataProvider.Instance.starClaim);
             }
 
             if (valueStarClaim > 0)
@@ -223,7 +223,7 @@ public class GameplayUI : MonoBehaviour
                 StarRewardAnim(valueStarClaim);
             }
 
-            DataProvider.Instance.valueStarClaim = 0;
+            DataProvider.Instance.starClaim = 0;
         }
 
         animReward.enabled = DataManager.STAR >= 20;
@@ -268,9 +268,9 @@ public class GameplayUI : MonoBehaviour
 
     protected void CommingSoon()
     {
-        if (GenMap.Instance.dataLevels.dataLevels.Count <= DataManager.CurrentNormalLevel)
+        if (MapManager.Instance.dataLevels.dataLevels.Count <= DataManager.CurrentNormalLevel)
         {
-            UIManager.Instance.OpenUI<ComingSoonUI>(DialogType.COMMING_SOON);
+            UIManager.Instance.OpenUI<ComingSoonPopup>(DialogType.COMMING_SOON);
         }
     }
     protected void RateUs()
@@ -309,7 +309,7 @@ public class GameplayUI : MonoBehaviour
 
     private void Click_Setting()
     {
-        UIManager.Instance.OpenUI<SettingUI>(DialogType.SETTING);
+        UIManager.Instance.OpenUI<SettingPopup>(DialogType.SETTING);
     }
 
     private void Click_ResetLevel()
@@ -380,7 +380,7 @@ public class GameplayUI : MonoBehaviour
         //claim reward
         if (DataManager.STAR >= 20)
         {
-            var giftOpen = UIManager.Instance.OpenUI<OpenGiftUI>(DialogType.OPEN_GIFT);
+            var giftOpen = UIManager.Instance.OpenUI<OpenGiftPopup>(DialogType.OPEN_GIFT);
             giftOpen.SetGift(true);
         }
     }

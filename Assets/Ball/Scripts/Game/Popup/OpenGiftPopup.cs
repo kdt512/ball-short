@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 //DONE
-public class OpenGiftUI : BaseUI
+public class OpenGiftPopup : BasePopup
 {
     [SerializeField] private TextMeshProUGUI _Title;
 
@@ -96,7 +96,7 @@ public class OpenGiftUI : BaseUI
 
         if (!isGift)
         {
-            UIManager.Instance.OpenUI<ShopUI>(DialogType.SHOP);
+            UIManager.Instance.OpenUI<ShopPopup>(DialogType.SHOP);
         }
     }
 
@@ -149,7 +149,7 @@ public class OpenGiftUI : BaseUI
 
         _gift.gameObject.SetActive(true);
 
-        DataManager.COIN -= DataProvider.Instance.coinGetItemInShop;
+        DataManager.COIN -= DataProvider.Instance.coinShop;
         EventDispatcher.PostEvent(EventId.UPDATE_COIN);
     }
 

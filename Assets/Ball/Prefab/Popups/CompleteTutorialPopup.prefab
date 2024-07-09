@@ -816,7 +816,7 @@ GameObject:
   - component: {fileID: 7218597999442025677}
   - component: {fileID: 1092094138506913094}
   m_Layer: 5
-  m_Name: CompleteTutorial
+  m_Name: CompleteTutorialPopup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,4 +1,4 @@
-public class CompleteTutorialUI : BaseUI
+public class CompleteTutorialPopup : BasePopup
 {
     public override void OnClick(int index)
     {
@@ -15,6 +15,6 @@ public class CompleteTutorialUI : BaseUI
     {
         //TrackingManager.Instance.LogEventCompleteTutorial();
         DataManager.IsFullTutorial = true;
-        UIManager.Instance.CloseUI<CompleteTutorialUI>(DialogType.COMPLETE_TUTORIAL);
+        UIManager.Instance.CloseUI<CompleteTutorialPopup>(DialogType.COMPLETE_TUTORIAL);
     }
 }
