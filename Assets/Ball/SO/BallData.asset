@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fd17366778c8ae45aff7e6fd7cc92dd, type: 3}
+  m_Name: BallData
+  m_EditorClassIdentifier: 
+  listBallData:
+  - skinId: 0
+    spriteItemShop: {fileID: 21300000, guid: 21a4d59048f35864da264ac20e4c8a57, type: 3}
+    listSpriteBalls:
+    - {fileID: 21300000, guid: cb08c20ac3c0a104db1ef53991dc5816, type: 3}
+    - {fileID: 21300000, guid: 062f77e71c77d614789a017f6f35257b, type: 3}
+    - {fileID: 21300000, guid: 0c4b441459b7daf4ab01a80dec560efb, type: 3}
+    - {fileID: 21300000, guid: 6b03185e008be344882623ae30aef17a, type: 3}
+    - {fileID: 21300000, guid: 2775afaa72a617948a1f84139e66b570, type: 3}
+    - {fileID: 21300000, guid: 060a1b804500b804aa7222de28cf86ef, type: 3}
+    - {fileID: 21300000, guid: f3701727dddf24245b742988ee600c14, type: 3}
+    - {fileID: 21300000, guid: 21a4d59048f35864da264ac20e4c8a57, type: 3}
+    - {fileID: 21300000, guid: e4cd1ab694d603e49841b772f54c8eef, type: 3}
+    - {fileID: 21300000, guid: 143022ac57066904daadbc3636b8a40b, type: 3}
+    - {fileID: 21300000, guid: f6e93784ccf0ec74196925fb0855e6ce, type: 3}
+    - {fileID: 21300000, guid: ec89f123468404741855928b6bf98b90, type: 3}
+  - skinId: 1
+    spriteItemShop: {fileID: 21300000, guid: 196176825862def44a91197a4ac2e0f4, type: 3}
+    listSpriteBalls:
+    - {fileID: 21300000, guid: 10d0f11067f330c4ab52ca54d2c9d307, type: 3}
+    - {fileID: 21300000, guid: 196176825862def44a91197a4ac2e0f4, type: 3}
+    - {fileID: 21300000, guid: 4f46fa0213f11844bbf0b216202d20df, type: 3}
+    - {fileID: 21300000, guid: 551c8a5566d58dd47a7b0d4074ecba18, type: 3}
+    - {fileID: 21300000, guid: 02020a93cabdf3f469dfbafbc28122bb, type: 3}
+    - {fileID: 21300000, guid: 433fb6bcf9408bd449a2a1ba862d186f, type: 3}
+    - {fileID: 21300000, guid: 30e5f3ab7b471a04caaf687be940b97a, type: 3}
+    - {fileID: 21300000, guid: 292234ea51a84b3419a55b854abb4fcd, type: 3}
+    - {fileID: 21300000, guid: b8d4f9c0c442a2241b3ecb783685d1af, type: 3}
+    - {fileID: 21300000, guid: 57608a434ae4daf42b06b047eee32261, type: 3}
+    - {fileID: 21300000, guid: 7ca2f0929527b4a469b8319459dbdc82, type: 3}
+    - {fileID: 21300000, guid: ad020263bcab07e4299c8454007ffb44, type: 3}
+  - skinId: 2
+    spriteItemShop: {fileID: 21300000, guid: 76e074f2560466844a5b443edf4a6396, type: 3}
+    listSpriteBalls:
+    - {fileID: 21300000, guid: d581f4b867ea7ea4b96ac090e2ae4de5, type: 3}
+    - {fileID: 21300000, guid: 073c71d95f8cb084990d1e100ee3599a, type: 3}
+    - {fileID: 21300000, guid: 76e074f2560466844a5b443edf4a6396, type: 3}
+    - {fileID: 21300000, guid: 28f9943a5e9b08d4b9569e2ff11ce549, type: 3}
+    - {fileID: 21300000, guid: a2327b230a6b0a24db1e4502c2de20dd, type: 3}
+    - {fileID: 21300000, guid: a80bc2b6657e1c24d99d57c67d27d0cf, type: 3}
+    - {fileID: 21300000, guid: 4657dd8657f7943498306c1f4fdcb29a, type: 3}
+    - {fileID: 21300000, guid: 14f9c32c752f89649b03a00f2fa9c1b7, type: 3}
+    - {fileID: 21300000, guid: 90d9bd63155a6ec4c8dfb709986c70a6, type: 3}
+    - {fileID: 21300000, guid: 3452813ccbd91eb45b2a3bb8b43b4a34, type: 3}
+    - {fileID: 21300000, guid: e6679b946fabdae40ac342c4ea074424, type: 3}
+    - {fileID: 21300000, guid: 136469ac5e91c1b42a7181b32a2f6900, type: 3}
+  - skinId: 3
+    spriteItemShop: {fileID: 21300000, guid: 05b9c31bbadfe49e983190f615fc7e04, type: 3}
+    listSpriteBalls:
+    - {fileID: 21300000, guid: f34b53937ab0114438d49c65a30db0ba, type: 3}
+    - {fileID: 21300000, guid: 05b9c31bbadfe49e983190f615fc7e04, type: 3}
+    - {fileID: 21300000, guid: 3d383233c3e4eb04491799c54ddeffa1, type: 3}
+    - {fileID: 21300000, guid: 687ab78d9f02a5046b61677e193820d5, type: 3}
+    - {fileID: 21300000, guid: 7b1b91cd8fceaf844bb96bb088b5db89, type: 3}
+    - {fileID: 21300000, guid: f25aff5a56004a247a3c70ba449b6b21, type: 3}
+    - {fileID: 21300000, guid: df3090285d525b74c8482b70edc5bc5e, type: 3}
+    - {fileID: 21300000, guid: 64bc1d562b19b2a4aa0103b0df50d9d9, type: 3}
+    - {fileID: 21300000, guid: 46d791be4378c7d45a4fb546881722a5, type: 3}
+    - {fileID: 21300000, guid: c5f1999a593ebc44ba56cab11b82c6a5, type: 3}
+    - {fileID: 21300000, guid: 7fc448f620724c148881a99ee4e6eee7, type: 3}
+    - {fileID: 21300000, guid: 76ce13daa40f0194ebe2a72f3369707c, type: 3}
+  - skinId: 4
+    spriteItemShop: {fileID: 21300000, guid: 60153e7e487da284abbdc764581d5405, type: 3}
+    listSpriteBalls:
+    - {fileID: 21300000, guid: e5a0aa693737f9b4e9552d36aaaa8be1, type: 3}
+    - {fileID: 21300000, guid: 60153e7e487da284abbdc764581d5405, type: 3}
+    - {fileID: 21300000, guid: 81e71e95c14b98e4e82d74d395775b72, type: 3}
+    - {fileID: 21300000, guid: 4c734976e8aa2254e9ce9dac2849fbcb, type: 3}
+    - {fileID: 21300000, guid: ab3e965c98533e74bb5bf739326961e6, type: 3}
+    - {fileID: 21300000, guid: 6d84a582c0505e547ad8b6ad1b575e37, type: 3}
+    - {fileID: 21300000, guid: 8e2a42c33081aa0499ca504dcc705a96, type: 3}
+    - {fileID: 21300000, guid: 3c092d2aa5934b84a9c5fa2d1aeff5fc, type: 3}
+    - {fileID: 21300000, guid: ffe682fd17a328b4790b32fd005d44c1, type: 3}
+    - {fileID: 21300000, guid: 1000edd7a81b1784ea5a3494a837b0a7, type: 3}
+    - {fileID: 21300000, guid: e66681134f240ae45ad2c8f5834aeda4, type: 3}
+    - {fileID: 21300000, guid: 986006fd0ccda4642a7f7a22ebe28a18, type: 3}
+  - skinId: 5
+    spriteItemShop: {fileID: 21300000, guid: ea7eb962a5a8f6243b5679a13634e449, type: 3}
+    listSpriteBalls:
+    - {fileID: 21300000, guid: d9f44e3585cab184fa67b9f102c58a4c, type: 3}
+    - {fileID: 21300000, guid: ccc40c0a036a5a74abd79809310f507d, type: 3}
+    - {fileID: 21300000, guid: ea7eb962a5a8f6243b5679a13634e449, type: 3}
+    - {fileID: 21300000, guid: bc48436c3b9efa44bb789e224290c534, type: 3}
+    - {fileID: 21300000, guid: 37019e045c87dc645899c2acc9856551, type: 3}
+    - {fileID: 21300000, guid: ff320571e262ffc4fb8b455be620890e, type: 3}
+    - {fileID: 21300000, guid: bdeafc54d48318f428c3d45919fd6ece, type: 3}
+    - {fileID: 21300000, guid: 1babe6379702943419ca75c12f24e1b5, type: 3}
+    - {fileID: 21300000, guid: e9c3fb6796cc0d641ab8b9355c38d658, type: 3}
+    - {fileID: 21300000, guid: 57a63f38f03d2d240a3abd57197a9c7b, type: 3}
+    - {fileID: 21300000, guid: 5ae93871f7087474d9c3db65fca9ef7f, type: 3}
+    - {fileID: 21300000, guid: 5ac845a6298c27443bef8cd5ec144222, type: 3}

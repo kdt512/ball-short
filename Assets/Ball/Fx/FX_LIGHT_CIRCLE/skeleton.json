@@ -1,0 +1,41 @@
+{
+"skeleton": {
+	"hash": "N/6foMNTiMI",
+	"spine": "4.0.64",
+	"x": -518.77,
+	"y": -431.18,
+	"width": 1064,
+	"height": 892,
+	"images": "../IMG SPINE/PNG/Tia Sang/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "Tia Sang", "parent": "root" }
+],
+"slots": [
+	{ "name": "vongtiasang", "bone": "Tia Sang", "attachment": "vongsanggiua" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"vongtiasang": {
+				"vongsanggiua": { "x": 13.23, "y": 14.82, "width": 1064, "height": 892 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"Tia Sang": {
+				"rotate": [
+					{},
+					{ "time": 4, "value": -361.88 }
+				]
+			}
+		}
+	}
+}
+}

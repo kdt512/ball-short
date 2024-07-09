@@ -1,0 +1,6 @@
+skeleton.png
+size:1068,896
+filter:Linear,Linear
+pma:true
+vongsanggiua
+bounds:2,2,1064,892

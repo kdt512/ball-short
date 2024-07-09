@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/_Game/Scripts/Manager/GameManager.cs.meta
+guid: eda08e6a8e4da4c4294d104307624483
+========
+guid: 92c2dcd36e7452345a881da103da753f
+>>>>>>>> duc:Assets/_Game/Scripts/Loading.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

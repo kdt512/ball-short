@@ -1,0 +1,4515 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65d7b3f8e2489442940cc4a3f215923, type: 3}
+  m_Name: DataLevel
+  m_EditorClassIdentifier: 
+  dataLevels:
+  - nameLevel: LEVEL 1
+    idLevel: 0
+    countTube: 2
+    countAddTube: 1
+    countObjectDifferent: 1
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 2
+    idLevel: 1
+    countTube: 3
+    countAddTube: 1
+    countObjectDifferent: 2
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 3
+    idLevel: 2
+    countTube: 5
+    countAddTube: 1
+    countObjectDifferent: 3
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 4
+    idLevel: 3
+    countTube: 5
+    countAddTube: 1
+    countObjectDifferent: 3
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 5
+    idLevel: 4
+    countTube: 7
+    countAddTube: 1
+    countObjectDifferent: 5
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 6
+    idLevel: 5
+    countTube: 7
+    countAddTube: 1
+    countObjectDifferent: 5
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 7
+    idLevel: 6
+    countTube: 7
+    countAddTube: 1
+    countObjectDifferent: 5
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 8
+    idLevel: 7
+    countTube: 7
+    countAddTube: 1
+    countObjectDifferent: 5
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 9
+    idLevel: 8
+    countTube: 7
+    countAddTube: 1
+    countObjectDifferent: 5
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 10
+    idLevel: 9
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 11
+    idLevel: 10
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 12
+    idLevel: 11
+    countTube: 7
+    countAddTube: 1
+    countObjectDifferent: 5
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 13
+    idLevel: 12
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 14
+    idLevel: 13
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 15
+    idLevel: 14
+    countTube: 7
+    countAddTube: 1
+    countObjectDifferent: 5
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 16
+    idLevel: 15
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 17
+    idLevel: 16
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 18
+    idLevel: 17
+    countTube: 7
+    countAddTube: 1
+    countObjectDifferent: 5
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 19
+    idLevel: 18
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 20
+    idLevel: 19
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 21
+    idLevel: 20
+    countTube: 7
+    countAddTube: 1
+    countObjectDifferent: 5
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 22
+    idLevel: 21
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 23
+    idLevel: 22
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 24
+    idLevel: 23
+    countTube: 7
+    countAddTube: 1
+    countObjectDifferent: 5
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 25
+    idLevel: 24
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 26
+    idLevel: 25
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 27
+    idLevel: 26
+    countTube: 7
+    countAddTube: 1
+    countObjectDifferent: 5
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 28
+    idLevel: 27
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 29
+    idLevel: 28
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 30
+    idLevel: 29
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 31
+    idLevel: 30
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 32
+    idLevel: 31
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 33
+    idLevel: 32
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 34
+    idLevel: 33
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 35
+    idLevel: 34
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 36
+    idLevel: 35
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 37
+    idLevel: 36
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 38
+    idLevel: 37
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 39
+    idLevel: 38
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 40
+    idLevel: 39
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 41
+    idLevel: 40
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 42
+    idLevel: 41
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 43
+    idLevel: 42
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 44
+    idLevel: 43
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 45
+    idLevel: 44
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 46
+    idLevel: 45
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 47
+    idLevel: 46
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 48
+    idLevel: 47
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 49
+    idLevel: 48
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 50
+    idLevel: 49
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 51
+    idLevel: 50
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 52
+    idLevel: 51
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 53
+    idLevel: 52
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 54
+    idLevel: 53
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 55
+    idLevel: 54
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 56
+    idLevel: 55
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 57
+    idLevel: 56
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 58
+    idLevel: 57
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 59
+    idLevel: 58
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 60
+    idLevel: 59
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 61
+    idLevel: 60
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 62
+    idLevel: 61
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 63
+    idLevel: 62
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 64
+    idLevel: 63
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 65
+    idLevel: 64
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 66
+    idLevel: 65
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 67
+    idLevel: 66
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 68
+    idLevel: 67
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 69
+    idLevel: 68
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 70
+    idLevel: 69
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 71
+    idLevel: 70
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 72
+    idLevel: 71
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 73
+    idLevel: 72
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 74
+    idLevel: 73
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 75
+    idLevel: 74
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 76
+    idLevel: 75
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 77
+    idLevel: 76
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 78
+    idLevel: 77
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 79
+    idLevel: 78
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 80
+    idLevel: 79
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 81
+    idLevel: 80
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 82
+    idLevel: 81
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 83
+    idLevel: 82
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 84
+    idLevel: 83
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 85
+    idLevel: 84
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 86
+    idLevel: 85
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 87
+    idLevel: 86
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 88
+    idLevel: 87
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 89
+    idLevel: 88
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 90
+    idLevel: 89
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 91
+    idLevel: 90
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 92
+    idLevel: 91
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 93
+    idLevel: 92
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 94
+    idLevel: 93
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 95
+    idLevel: 94
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 96
+    idLevel: 95
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 97
+    idLevel: 96
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 98
+    idLevel: 97
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 99
+    idLevel: 98
+    countTube: 9
+    countAddTube: 1
+    countObjectDifferent: 7
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 100
+    idLevel: 99
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 101
+    idLevel: 100
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 102
+    idLevel: 101
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 103
+    idLevel: 102
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 104
+    idLevel: 103
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 105
+    idLevel: 104
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 106
+    idLevel: 105
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 107
+    idLevel: 106
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 108
+    idLevel: 107
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 109
+    idLevel: 108
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 110
+    idLevel: 109
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 111
+    idLevel: 110
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 112
+    idLevel: 111
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 113
+    idLevel: 112
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 114
+    idLevel: 113
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 115
+    idLevel: 114
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 116
+    idLevel: 115
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 117
+    idLevel: 116
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 118
+    idLevel: 117
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 119
+    idLevel: 118
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 120
+    idLevel: 119
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 121
+    idLevel: 120
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 122
+    idLevel: 121
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 123
+    idLevel: 122
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 124
+    idLevel: 123
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 125
+    idLevel: 124
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 126
+    idLevel: 125
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 127
+    idLevel: 126
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 128
+    idLevel: 127
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 129
+    idLevel: 128
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 130
+    idLevel: 129
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 131
+    idLevel: 130
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 132
+    idLevel: 131
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 133
+    idLevel: 132
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 134
+    idLevel: 133
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 135
+    idLevel: 134
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 136
+    idLevel: 135
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 137
+    idLevel: 136
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 138
+    idLevel: 137
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 139
+    idLevel: 138
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 140
+    idLevel: 139
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 141
+    idLevel: 140
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 142
+    idLevel: 141
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 143
+    idLevel: 142
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 144
+    idLevel: 143
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 145
+    idLevel: 144
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 146
+    idLevel: 145
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 147
+    idLevel: 146
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 148
+    idLevel: 147
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 149
+    idLevel: 148
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 150
+    idLevel: 149
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 151
+    idLevel: 150
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 152
+    idLevel: 151
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 153
+    idLevel: 152
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 154
+    idLevel: 153
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 155
+    idLevel: 154
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 156
+    idLevel: 155
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 157
+    idLevel: 156
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 158
+    idLevel: 157
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 159
+    idLevel: 158
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 160
+    idLevel: 159
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 161
+    idLevel: 160
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 162
+    idLevel: 161
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 163
+    idLevel: 162
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 164
+    idLevel: 163
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 165
+    idLevel: 164
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 166
+    idLevel: 165
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 167
+    idLevel: 166
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 168
+    idLevel: 167
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 169
+    idLevel: 168
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 170
+    idLevel: 169
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 171
+    idLevel: 170
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 172
+    idLevel: 171
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 173
+    idLevel: 172
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 174
+    idLevel: 173
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 175
+    idLevel: 174
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 176
+    idLevel: 175
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 177
+    idLevel: 176
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 178
+    idLevel: 177
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 179
+    idLevel: 178
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 180
+    idLevel: 179
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 181
+    idLevel: 180
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 182
+    idLevel: 181
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 183
+    idLevel: 182
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 184
+    idLevel: 183
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 185
+    idLevel: 184
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 186
+    idLevel: 185
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 187
+    idLevel: 186
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 188
+    idLevel: 187
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 189
+    idLevel: 188
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 190
+    idLevel: 189
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 191
+    idLevel: 190
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 192
+    idLevel: 191
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 193
+    idLevel: 192
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 194
+    idLevel: 193
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 195
+    idLevel: 194
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 196
+    idLevel: 195
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 197
+    idLevel: 196
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 198
+    idLevel: 197
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 199
+    idLevel: 198
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 200
+    idLevel: 199
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 201
+    idLevel: 200
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 202
+    idLevel: 201
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 203
+    idLevel: 202
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 204
+    idLevel: 203
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 205
+    idLevel: 204
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 206
+    idLevel: 205
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 207
+    idLevel: 206
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 208
+    idLevel: 207
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 209
+    idLevel: 208
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 210
+    idLevel: 209
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 211
+    idLevel: 210
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 212
+    idLevel: 211
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 213
+    idLevel: 212
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 214
+    idLevel: 213
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 215
+    idLevel: 214
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 216
+    idLevel: 215
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 217
+    idLevel: 216
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 218
+    idLevel: 217
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 219
+    idLevel: 218
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 220
+    idLevel: 219
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 221
+    idLevel: 220
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 222
+    idLevel: 221
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 223
+    idLevel: 222
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 224
+    idLevel: 223
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 225
+    idLevel: 224
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 226
+    idLevel: 225
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 227
+    idLevel: 226
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 228
+    idLevel: 227
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 229
+    idLevel: 228
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 230
+    idLevel: 229
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 231
+    idLevel: 230
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 232
+    idLevel: 231
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 233
+    idLevel: 232
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 234
+    idLevel: 233
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 235
+    idLevel: 234
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 236
+    idLevel: 235
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 237
+    idLevel: 236
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 238
+    idLevel: 237
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 239
+    idLevel: 238
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 240
+    idLevel: 239
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 241
+    idLevel: 240
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 242
+    idLevel: 241
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 243
+    idLevel: 242
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 244
+    idLevel: 243
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 245
+    idLevel: 244
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 246
+    idLevel: 245
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 247
+    idLevel: 246
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 248
+    idLevel: 247
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 249
+    idLevel: 248
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 250
+    idLevel: 249
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 251
+    idLevel: 250
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 252
+    idLevel: 251
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 253
+    idLevel: 252
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 254
+    idLevel: 253
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 255
+    idLevel: 254
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 256
+    idLevel: 255
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 257
+    idLevel: 256
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 258
+    idLevel: 257
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 259
+    idLevel: 258
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 260
+    idLevel: 259
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 261
+    idLevel: 260
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 262
+    idLevel: 261
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 263
+    idLevel: 262
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 264
+    idLevel: 263
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 265
+    idLevel: 264
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 266
+    idLevel: 265
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 267
+    idLevel: 266
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 268
+    idLevel: 267
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 269
+    idLevel: 268
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 270
+    idLevel: 269
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 271
+    idLevel: 270
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 272
+    idLevel: 271
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 273
+    idLevel: 272
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 274
+    idLevel: 273
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 275
+    idLevel: 274
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 276
+    idLevel: 275
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 277
+    idLevel: 276
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 278
+    idLevel: 277
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 279
+    idLevel: 278
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 280
+    idLevel: 279
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 281
+    idLevel: 280
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 282
+    idLevel: 281
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 283
+    idLevel: 282
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 284
+    idLevel: 283
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 285
+    idLevel: 284
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 286
+    idLevel: 285
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 287
+    idLevel: 286
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 288
+    idLevel: 287
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 289
+    idLevel: 288
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 290
+    idLevel: 289
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 291
+    idLevel: 290
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 292
+    idLevel: 291
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 293
+    idLevel: 292
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 294
+    idLevel: 293
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 295
+    idLevel: 294
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 296
+    idLevel: 295
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 297
+    idLevel: 296
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 298
+    idLevel: 297
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 299
+    idLevel: 298
+    countTube: 12
+    countAddTube: 1
+    countObjectDifferent: 10
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 300
+    idLevel: 299
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 301
+    idLevel: 300
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 302
+    idLevel: 301
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 303
+    idLevel: 302
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 304
+    idLevel: 303
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 305
+    idLevel: 304
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 306
+    idLevel: 305
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 307
+    idLevel: 306
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 308
+    idLevel: 307
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 309
+    idLevel: 308
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 310
+    idLevel: 309
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 311
+    idLevel: 310
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 312
+    idLevel: 311
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 313
+    idLevel: 312
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 314
+    idLevel: 313
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 315
+    idLevel: 314
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 316
+    idLevel: 315
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 317
+    idLevel: 316
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 318
+    idLevel: 317
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 319
+    idLevel: 318
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 320
+    idLevel: 319
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 321
+    idLevel: 320
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 322
+    idLevel: 321
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 323
+    idLevel: 322
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 324
+    idLevel: 323
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 325
+    idLevel: 324
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 326
+    idLevel: 325
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 327
+    idLevel: 326
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 328
+    idLevel: 327
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 329
+    idLevel: 328
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 330
+    idLevel: 329
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 331
+    idLevel: 330
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 332
+    idLevel: 331
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 333
+    idLevel: 332
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 334
+    idLevel: 333
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 335
+    idLevel: 334
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 336
+    idLevel: 335
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 337
+    idLevel: 336
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 338
+    idLevel: 337
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 339
+    idLevel: 338
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 340
+    idLevel: 339
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 341
+    idLevel: 340
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 342
+    idLevel: 341
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 343
+    idLevel: 342
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 344
+    idLevel: 343
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 345
+    idLevel: 344
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 346
+    idLevel: 345
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 347
+    idLevel: 346
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 348
+    idLevel: 347
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 349
+    idLevel: 348
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 350
+    idLevel: 349
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 351
+    idLevel: 350
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 352
+    idLevel: 351
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 353
+    idLevel: 352
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 354
+    idLevel: 353
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 355
+    idLevel: 354
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 356
+    idLevel: 355
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 357
+    idLevel: 356
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 358
+    idLevel: 357
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 359
+    idLevel: 358
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 360
+    idLevel: 359
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 361
+    idLevel: 360
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 362
+    idLevel: 361
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 363
+    idLevel: 362
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 364
+    idLevel: 363
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 365
+    idLevel: 364
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 366
+    idLevel: 365
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 367
+    idLevel: 366
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 368
+    idLevel: 367
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 369
+    idLevel: 368
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 370
+    idLevel: 369
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 371
+    idLevel: 370
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 372
+    idLevel: 371
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 373
+    idLevel: 372
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 374
+    idLevel: 373
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 375
+    idLevel: 374
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 376
+    idLevel: 375
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 377
+    idLevel: 376
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 378
+    idLevel: 377
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 379
+    idLevel: 378
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 380
+    idLevel: 379
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 381
+    idLevel: 380
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 382
+    idLevel: 381
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 383
+    idLevel: 382
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 384
+    idLevel: 383
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 385
+    idLevel: 384
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 386
+    idLevel: 385
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 387
+    idLevel: 386
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 388
+    idLevel: 387
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 389
+    idLevel: 388
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 390
+    idLevel: 389
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 391
+    idLevel: 390
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 392
+    idLevel: 391
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 393
+    idLevel: 392
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 394
+    idLevel: 393
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 395
+    idLevel: 394
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 396
+    idLevel: 395
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 397
+    idLevel: 396
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 398
+    idLevel: 397
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 399
+    idLevel: 398
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 400
+    idLevel: 399
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 401
+    idLevel: 400
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 402
+    idLevel: 401
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 403
+    idLevel: 402
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 404
+    idLevel: 403
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 405
+    idLevel: 404
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 406
+    idLevel: 405
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 407
+    idLevel: 406
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 408
+    idLevel: 407
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 409
+    idLevel: 408
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 410
+    idLevel: 409
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 411
+    idLevel: 410
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 412
+    idLevel: 411
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 413
+    idLevel: 412
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 414
+    idLevel: 413
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 415
+    idLevel: 414
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 416
+    idLevel: 415
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 417
+    idLevel: 416
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 418
+    idLevel: 417
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 419
+    idLevel: 418
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 420
+    idLevel: 419
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 421
+    idLevel: 420
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 422
+    idLevel: 421
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 423
+    idLevel: 422
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 424
+    idLevel: 423
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 425
+    idLevel: 424
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 426
+    idLevel: 425
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 427
+    idLevel: 426
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 428
+    idLevel: 427
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 429
+    idLevel: 428
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 430
+    idLevel: 429
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 431
+    idLevel: 430
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 432
+    idLevel: 431
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 433
+    idLevel: 432
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 434
+    idLevel: 433
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 435
+    idLevel: 434
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 436
+    idLevel: 435
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 437
+    idLevel: 436
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 438
+    idLevel: 437
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 439
+    idLevel: 438
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 440
+    idLevel: 439
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 441
+    idLevel: 440
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 442
+    idLevel: 441
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 443
+    idLevel: 442
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 444
+    idLevel: 443
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 445
+    idLevel: 444
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 446
+    idLevel: 445
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 447
+    idLevel: 446
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 448
+    idLevel: 447
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 449
+    idLevel: 448
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 450
+    idLevel: 449
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 451
+    idLevel: 450
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 452
+    idLevel: 451
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 453
+    idLevel: 452
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 454
+    idLevel: 453
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 455
+    idLevel: 454
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 456
+    idLevel: 455
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 457
+    idLevel: 456
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 458
+    idLevel: 457
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 459
+    idLevel: 458
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 460
+    idLevel: 459
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 461
+    idLevel: 460
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 462
+    idLevel: 461
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 463
+    idLevel: 462
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 464
+    idLevel: 463
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 465
+    idLevel: 464
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 466
+    idLevel: 465
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 467
+    idLevel: 466
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 468
+    idLevel: 467
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 469
+    idLevel: 468
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 470
+    idLevel: 469
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 471
+    idLevel: 470
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 472
+    idLevel: 471
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 473
+    idLevel: 472
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 474
+    idLevel: 473
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 475
+    idLevel: 474
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 476
+    idLevel: 475
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 477
+    idLevel: 476
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 478
+    idLevel: 477
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 479
+    idLevel: 478
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 480
+    idLevel: 479
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 481
+    idLevel: 480
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 482
+    idLevel: 481
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 483
+    idLevel: 482
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 484
+    idLevel: 483
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 485
+    idLevel: 484
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 486
+    idLevel: 485
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 487
+    idLevel: 486
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 488
+    idLevel: 487
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 489
+    idLevel: 488
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 490
+    idLevel: 489
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 491
+    idLevel: 490
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 492
+    idLevel: 491
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 493
+    idLevel: 492
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 494
+    idLevel: 493
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 495
+    idLevel: 494
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1
+  - nameLevel: LEVEL 496
+    idLevel: 495
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 497
+    idLevel: 496
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 498
+    idLevel: 497
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 499
+    idLevel: 498
+    countTube: 14
+    countAddTube: 1
+    countObjectDifferent: 12
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 0
+  - nameLevel: LEVEL 500
+    idLevel: 499
+    countTube: 11
+    countAddTube: 1
+    countObjectDifferent: 9
+    countStarReward: 0
+    claimStar: 3
+    timePlayLevel: 0
+    isHideObject: 1

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469cd6e4695749e45abf2fe124ce74e1, type: 3}
+  m_Name: BackgroundData
+  m_EditorClassIdentifier: 
+  listBackgroundData:
+  - bgId: 0
+    spriteItemShop: {fileID: 21300000, guid: e6ff06913e6bc1e4488608fe3dcd8c7d, type: 3}
+    spriteInGame: {fileID: 21300000, guid: 7c5fe8b9182e65247a6c7bdba25df9ff, type: 3}
+  - bgId: 1
+    spriteItemShop: {fileID: 21300000, guid: 6e3ef302947d4db45923803945ca3dd5, type: 3}
+    spriteInGame: {fileID: 21300000, guid: 5d12c86aa18c31a48a9c4924e7602213, type: 3}
+  - bgId: 2
+    spriteItemShop: {fileID: 21300000, guid: 9f6b4ace2113ac54a8b01cf9efae5978, type: 3}
+    spriteInGame: {fileID: 21300000, guid: 2c479c64050cc9b4581c9085bd9ca6f6, type: 3}
+  - bgId: 3
+    spriteItemShop: {fileID: 21300000, guid: 06cb05503a15d4c418dc1ace1badd246, type: 3}
+    spriteInGame: {fileID: 21300000, guid: 31bdfceb816e80f4f8538887c307600e, type: 3}
+  - bgId: 4
+    spriteItemShop: {fileID: 21300000, guid: 876c01568f4df464a889de382dfb511e, type: 3}
+    spriteInGame: {fileID: 21300000, guid: b9b1f1319aa8ca149804a15999d78076, type: 3}
+  - bgId: 5
+    spriteItemShop: {fileID: 21300000, guid: 8c94acb409f33914bbbb31b43009733f, type: 3}
+    spriteInGame: {fileID: 21300000, guid: 8fe49610d432c4c468a6934455e4265f, type: 3}

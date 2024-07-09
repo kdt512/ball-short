@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85ea97db5d2532349a89feb593790164, type: 3}
+  m_Name: BottleData
+  m_EditorClassIdentifier: 
+  listBottleData:
+  - id: 0
+    spriteItemShop: {fileID: 21300000, guid: 16c23f9f947fa9f428c3e827d5c96d6c, type: 3}
+    spriteInGame: {fileID: 21300000, guid: 16c23f9f947fa9f428c3e827d5c96d6c, type: 3}
+    spriteComplete: {fileID: 21300000, guid: 2f6c00dba0fae35459c0fd43e45ffa65, type: 3}
+  - id: 1
+    spriteItemShop: {fileID: 21300000, guid: f113394d46235794b999eaf95a3161b5, type: 3}
+    spriteInGame: {fileID: 21300000, guid: f113394d46235794b999eaf95a3161b5, type: 3}
+    spriteComplete: {fileID: 21300000, guid: 13e71a112bb69a24b9015ad5b91b2aae, type: 3}
+  - id: 2
+    spriteItemShop: {fileID: 21300000, guid: cd69ea552545c7041b3c7b8601508f94, type: 3}
+    spriteInGame: {fileID: 21300000, guid: cd69ea552545c7041b3c7b8601508f94, type: 3}
+    spriteComplete: {fileID: 21300000, guid: 34c0ecea52952d446ae59bb56bc52658, type: 3}
+  - id: 3
+    spriteItemShop: {fileID: 21300000, guid: 8fff10382849aa04fb00ba5fc2f8bd32, type: 3}
+    spriteInGame: {fileID: 21300000, guid: 8fff10382849aa04fb00ba5fc2f8bd32, type: 3}
+    spriteComplete: {fileID: 21300000, guid: 356a1dbe9d3f6ba4f8a8c22e524f246f, type: 3}
+  - id: 4
+    spriteItemShop: {fileID: 21300000, guid: 22d6c2a22bba1454488f8c98f9f570d7, type: 3}
+    spriteInGame: {fileID: 21300000, guid: 22d6c2a22bba1454488f8c98f9f570d7, type: 3}
+    spriteComplete: {fileID: 21300000, guid: 6e83fa8131893b94787b8decffb84377, type: 3}
+  - id: 5
+    spriteItemShop: {fileID: 21300000, guid: 14e1cc2339c89b044a323fb2d23db53d, type: 3}
+    spriteInGame: {fileID: 21300000, guid: 14e1cc2339c89b044a323fb2d23db53d, type: 3}
+    spriteComplete: {fileID: 21300000, guid: 702ba840bf22df240b18a2f35fa878b4, type: 3}

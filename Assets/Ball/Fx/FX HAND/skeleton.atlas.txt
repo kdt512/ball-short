@@ -1,0 +1,11 @@
+skeleton.png
+size:830,330
+filter:Linear,Linear
+pma:true
+Cirrcle
+bounds:2,2,651,326
+Hand Cursor
+bounds:655,117,173,211
+muitenhuongdan1
+bounds:655,28,87,164
+rotate:90
