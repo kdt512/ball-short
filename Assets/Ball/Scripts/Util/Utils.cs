@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = System.Random;
@@ -51,5 +53,16 @@ public static class Utils
     public static float GetDurationMove(Vector2 start, Vector2 end)
     {
         return Vector2.Distance(start, end) * Constans.DURATION_MOVE_PER_UNIT;
+    }
+
+    public static void Invoke(this MonoBehaviour mb, Action f, float delay)
+    {
+        mb.StartCoroutine(InvokeRoutine(f, delay));
+    }
+
+    private static IEnumerator InvokeRoutine(Action f, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        f();
     }
 }
