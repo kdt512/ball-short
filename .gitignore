@@ -12,7 +12,10 @@
 /Assets/ExternalDependencyManager/
 /Assets/GoogleMobileAds/
 /Assets/Plugins/
-
+/Assets/Plugins/
+/Assets/Editor Default Resources/
+/Assets/Firebase/
+/Assets/GooglePlayPlugins/
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # [Aa]ssets/AssetStoreTools*
 

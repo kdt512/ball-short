@@ -141,16 +141,41 @@ public class AdsController : Singleton<AdsController>
     #endregion
 
     #region Banner
-    private BannerViewController _banner = new BannerViewController();
+    public BannerViewController banner = new BannerViewController();
     #endregion
 
     #region Interstitia
-    private InterstitialAdController _interstitical = new InterstitialAdController();
+    public InterstitialAdController interstitical = new InterstitialAdController();
     #endregion
 
     #region RewardedAd
-    private RewardedAdController _rewarded = new RewardedAdController();
+    public RewardedAdController rewarded = new RewardedAdController();
     #endregion
+}
+
+
+
+public enum AdUnitType
+{
+    Appopen,
+    Banner,
+    Interstitial,
+    Rewarded,
+}
+
+public enum AdEventType
+{
+    Click,
+    Load,
+    FailToLoad,
+    FailToShow,
+    FailToOpen,
+    Open,
+    Impression,
+    Paid,
+    Close,
+    CallLoad,
+    Show,
 }
 
 public class GoogleMobileAdsConsentController

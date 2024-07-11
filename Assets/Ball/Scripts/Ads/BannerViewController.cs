@@ -13,6 +13,7 @@ public class BannerViewController
 #endif
 
     private BannerView _bannerView;
+    private string responseId;
 
     public void CreateBannerView()
     {
@@ -62,6 +63,7 @@ public class BannerViewController
         {
             Debug.Log("Showing banner view.");
             _bannerView.Show();
+            FirebaseManager.Instance.LogEventAds(AdUnitType.Banner, responseId == _bannerView.GetResponseInfo().GetResponseId());
         }
     }
 
@@ -107,26 +109,29 @@ public class BannerViewController
         // Raised when an ad is loaded into the banner view.
         _bannerView.OnBannerAdLoaded += () =>
         {
+            responseId = _bannerView.GetResponseInfo().GetResponseId();
             Debug.Log("Banner view loaded an ad with response : " + _bannerView.GetResponseInfo());
-
-            // Inform the UI that the ad is ready.
         };
         // Raised when an ad fails to load into the banner view.
         _bannerView.OnBannerAdLoadFailed += (LoadAdError error) =>
         {
             Debug.LogError("Banner view failed to load an ad with error : " + error);
-            Utils.Invoke(AdsController.Instance,LoadAd, 60);
+            Utils.Invoke(AdsController.Instance, LoadAd, 60);
 
         };
         // Raised when the ad is estimated to have earned money.
         _bannerView.OnAdPaid += (AdValue adValue) =>
         {
             Debug.Log(String.Format("Banner view paid {0} {1}.", adValue.Value, adValue.CurrencyCode));
+            DataManager.TotalBannerAdsValue += adValue.Value;
+            FirebaseManager.Instance.LogEventAds(AdUnitType.Banner, DataManager.TotalBannerAdsValue);
         };
         // Raised when an impression is recorded for an ad.
         _bannerView.OnAdImpressionRecorded += () =>
         {
             Debug.Log("Banner view recorded an impression.");
+            FirebaseManager.Instance.LogEventAds(AdUnitType.Banner, AdEventType.Impression);
+
         };
         // Raised when a click is recorded for an ad.
         _bannerView.OnAdClicked += () =>

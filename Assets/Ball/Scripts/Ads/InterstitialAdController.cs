@@ -14,6 +14,7 @@ public class InterstitialAdController
 
     private InterstitialAd _interstitialAd;
     private Action<bool> showCompleteCB;
+    private string responseId;
 
     /// Loads the ad.
     public void LoadAd()
@@ -54,6 +55,7 @@ public class InterstitialAdController
 
             // Register to ad events to extend functionality.
             RegisterEventHandlers(ad);
+            responseId = _interstitialAd.GetResponseInfo().GetResponseId();
 
         });
     }
@@ -69,6 +71,8 @@ public class InterstitialAdController
             Debug.Log("Showing interstitial ad.");
             showCompleteCB = callback;
             _interstitialAd.Show();
+            FirebaseManager.Instance.LogEventAds(AdUnitType.Interstitial, responseId == _interstitialAd.GetResponseInfo().GetResponseId());
+
         }
         else
         {
@@ -105,14 +109,15 @@ public class InterstitialAdController
         // Raised when the ad is estimated to have earned money.
         ad.OnAdPaid += (AdValue adValue) =>
         {
-            Debug.Log(String.Format("Interstitial ad paid {0} {1}.",
-                adValue.Value,
-                adValue.CurrencyCode));
+            Debug.Log(String.Format("Interstitial ad paid {0} {1}.", adValue.Value, adValue.CurrencyCode));
+            DataManager.TotalInterAdsValue += adValue.Value;
+            FirebaseManager.Instance.LogEventAds(AdUnitType.Interstitial, DataManager.TotalInterAdsValue);
         };
         // Raised when an impression is recorded for an ad.
         ad.OnAdImpressionRecorded += () =>
         {
             Debug.Log("Interstitial ad recorded an impression.");
+            FirebaseManager.Instance.LogEventAds(AdUnitType.Interstitial, AdEventType.Impression);
         };
         // Raised when a click is recorded for an ad.
         ad.OnAdClicked += () =>
@@ -137,7 +142,7 @@ public class InterstitialAdController
         {
             Debug.LogError("Interstitial ad failed to open full screen content with error : "
                 + error);
-            showCompleteCB?.Invoke(false); 
+            showCompleteCB?.Invoke(false);
             Utils.Invoke(AdsController.Instance, LoadAd, 3);
         };
     }

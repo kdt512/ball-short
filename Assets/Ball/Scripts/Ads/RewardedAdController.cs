@@ -14,6 +14,7 @@ public class RewardedAdController
 
     private RewardedAd _rewardedAd;
     private Action<bool> showCompleteCB;
+    private string responseId;
 
     /// Loads the ad.
     public void LoadAd()
@@ -54,7 +55,7 @@ public class RewardedAdController
 
             // Register to ad events to extend functionality.
             RegisterEventHandlers(ad);
-
+            responseId = _rewardedAd.GetResponseInfo().GetResponseId();
         });
     }
 
@@ -67,10 +68,9 @@ public class RewardedAdController
             Debug.Log("Showing rewarded ad.");
             _rewardedAd.Show((Reward reward) =>
             {
-                Debug.Log(String.Format("Rewarded ad granted a reward: {0} {1}",
-                                        reward.Amount,
-                                        reward.Type));
+                Debug.Log(String.Format("Rewarded ad granted a reward: {0} {1}", reward.Amount, reward.Type));
             });
+            FirebaseManager.Instance.LogEventAds(AdUnitType.Rewarded, responseId == _rewardedAd.GetResponseInfo().GetResponseId());
         }
         else
         {
@@ -108,14 +108,15 @@ public class RewardedAdController
         // Raised when the ad is estimated to have earned money.
         ad.OnAdPaid += (AdValue adValue) =>
         {
-            Debug.Log(String.Format("Rewarded ad paid {0} {1}.",
-                adValue.Value,
-                adValue.CurrencyCode));
+            Debug.Log(String.Format("Rewarded ad paid {0} {1}.", adValue.Value, adValue.CurrencyCode));
+            DataManager.TotalRewardAdsValue += adValue.Value;
+            FirebaseManager.Instance.LogEventAds(AdUnitType.Rewarded, DataManager.TotalRewardAdsValue);
         };
         // Raised when an impression is recorded for an ad.
         ad.OnAdImpressionRecorded += () =>
         {
             Debug.Log("Rewarded ad recorded an impression.");
+            FirebaseManager.Instance.LogEventAds(AdUnitType.Rewarded, AdEventType.Impression);
         };
         // Raised when a click is recorded for an ad.
         ad.OnAdClicked += () =>
