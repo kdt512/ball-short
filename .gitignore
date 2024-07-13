@@ -9,7 +9,14 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
-
+/Assets/ExternalDependencyManager/
+/Assets/GoogleMobileAds/
+/Assets/Plugins/
+/Assets/Plugins/
+/Assets/Editor Default Resources/
+/Assets/Firebase/
+/Assets/GooglePlayPlugins/
+/Assets/GeneratedLocalRepo/
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # [Aa]ssets/AssetStoreTools*
 

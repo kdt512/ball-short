@@ -71,33 +71,21 @@ public class WinPopup : BasePopup
 
     private void Click_CollectStar()
     {
-        //// watch ads
         SoundManager.Instance.Play(SoundType.CLICK);
-        //AdmodManager.Instance.ShowReward((t) =>
-        //{
-        //    isShowAds = false;
-        //    DataManager.CurrentNormalLevel++;
-        //    if (DataManager.UnlockNormalLevel < DataManager.CurrentNormalLevel)
-        //    {
-        //        DataManager.UnlockNormalLevel = DataManager.CurrentNormalLevel;
-        //        TrackingManager.Instance.LogEventLevelUp(DataManager.UnlockNormalLevel);
-        //    }
-
-        //    int index = LevelManager.Instance.StarClaimInLevel + 1;
-        //    DataProvider.Instance.valueStarClaim = index;
-        //    NextLevel();
-        //});
-        isShowAds = false;
-        DataManager.CurrentNormalLevel++;
-        if (DataManager.UnlockNormalLevel < DataManager.CurrentNormalLevel)
+        AdsController.Instance.rewarded.ShowAd((t) =>
         {
-            DataManager.UnlockNormalLevel = DataManager.CurrentNormalLevel;
-            //TrackingManager.Instance.LogEventLevelUp(DataManager.UnlockNormalLevel);
-        }
+            isShowAds = false;
+            DataManager.CurrentNormalLevel++;
+            if (DataManager.UnlockNormalLevel < DataManager.CurrentNormalLevel)
+            {
+                DataManager.UnlockNormalLevel = DataManager.CurrentNormalLevel;
+                FirebaseManager.Instance.LogEventLevelUp(DataManager.UnlockNormalLevel);
+            }
 
-        int index = LevelManager.Instance.StarClaimInLevel + 1;
-        DataProvider.Instance.starClaim = index;
-        NextLevel();
+            int index = LevelManager.Instance.StarClaimInLevel + 1;
+            DataProvider.Instance.starClaim = index;
+            NextLevel();
+        });
     }
 
     private void Click_Continue()
@@ -109,7 +97,7 @@ public class WinPopup : BasePopup
         {
             isShowAds = true;
             DataManager.UnlockNormalLevel = DataManager.CurrentNormalLevel;
-            //TrackingManager.Instance.LogEventLevelUp(DataManager.UnlockNormalLevel);
+            FirebaseManager.Instance.LogEventLevelUp(DataManager.UnlockNormalLevel);
         }
 
         DataProvider.Instance.starClaim = LevelManager.Instance.StarClaimInLevel;

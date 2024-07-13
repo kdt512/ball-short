@@ -13,7 +13,7 @@ public class CompleteTutorialPopup : BasePopup
 
     protected void Click_Close()
     {
-        //TrackingManager.Instance.LogEventCompleteTutorial();
+        FirebaseManager.Instance.LogEventCompleteTutorial();
         DataManager.IsFullTutorial = true;
         UIManager.Instance.CloseUI<CompleteTutorialPopup>(DialogType.COMPLETE_TUTORIAL);
     }
