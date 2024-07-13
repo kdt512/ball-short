@@ -9,19 +9,12 @@ public class AdsController : Singleton<AdsController>
 {
     #region AdsController
 
-#if UNITY_ANDROID
-    private const string banner_id = "ca-app-pub-3940256099942544/6300978111";
-    private const string interstitial_id = "ca-app-pub-3940256099942544/1033173712";
-    private const string reward_id = "ca-app-pub-3940256099942544/5224354917";
-#elif UNITY_IPHONE
-    private const string banner_id = "ca-app-pub-3940256099942544/2934735716";
-    private const string interstitial_id = "ca-app-pub-3940256099942544/4411468910";
-    private const string reward_id = "ca-app-pub-3940256099942544/1712485313";
-#else
-    private const string banner_id = "unused";
-    private const string interstitial_id = "unused";
-    private const string reward_id = "unused";
-#endif
+    public BannerViewController banner = new BannerViewController();
+    public InterstitialAdController interstitical = new InterstitialAdController();
+    public RewardedAdController rewarded = new RewardedAdController();
+
+    public bool hasAdsOpen = false;
+    public bool hasAdsBanner = false;
 
     internal static List<string> TestDeviceIds = new List<string>()
     {
@@ -32,7 +25,7 @@ public class AdsController : Singleton<AdsController>
         "702815ACFC14FF222DA1DC767672A573"
 #endif
     };
-    private static bool? _isInitialized;
+    public static bool? isInitialized;
     private GoogleMobileAdsConsentController _consentController = new GoogleMobileAdsConsentController();
 
     private void Start()
@@ -58,18 +51,18 @@ public class AdsController : Singleton<AdsController>
 
     private void InitializeGoogleMobileAds()
     {
-        if (_isInitialized.HasValue)
+        if (isInitialized.HasValue)
         {
             return;
         }
 
-        _isInitialized = false;
+        isInitialized = false;
         MobileAds.Initialize((InitializationStatus initstatus) =>
         {
             if (initstatus == null)
             {
                 Debug.LogError("Google Mobile Ads initialization failed.");
-                _isInitialized = null;
+                isInitialized = null;
                 return;
             }
 
@@ -86,8 +79,20 @@ public class AdsController : Singleton<AdsController>
             }
 
             Debug.Log("Google Mobile Ads initialization complete.");
-            _isInitialized = true;
+            isInitialized = true;
+            Request();
+
+            AppOpenAdManager.Instance.LoadAppOpenAd(() =>
+            {
+            });
         });
+    }
+
+    private void Request()
+    {
+        banner.LoadAd();
+        interstitical.LoadAd();
+        rewarded.LoadAd();
     }
 
     private void InitializeGoogleMobileAdsConsent()
@@ -140,17 +145,7 @@ public class AdsController : Singleton<AdsController>
     }
     #endregion
 
-    #region Banner
-    public BannerViewController banner = new BannerViewController();
-    #endregion
 
-    #region Interstitia
-    public InterstitialAdController interstitical = new InterstitialAdController();
-    #endregion
-
-    #region RewardedAd
-    public RewardedAdController rewarded = new RewardedAdController();
-    #endregion
 }
 
 

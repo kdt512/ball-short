@@ -65,6 +65,7 @@ public class InterstitialAdController
     {
         if (DataManager.IsNoAds)
             return;
+        AdsController.Instance.hasAdsOpen = true;
 
         if (_interstitialAd != null && _interstitialAd.CanShowAd())
         {
