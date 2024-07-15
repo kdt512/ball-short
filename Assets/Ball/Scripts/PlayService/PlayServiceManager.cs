@@ -26,4 +26,10 @@ public class PlayServiceManager : Singleton<PlayServiceManager>
         }
     }
 
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
