@@ -62,6 +62,8 @@ public class RewardedAdController
     /// Shows the ad.
     public void ShowAd(Action<bool> callback = null)
     {
+        AdsController.Instance.hasAdsOpen = true;
+
         if (_rewardedAd != null && _rewardedAd.CanShowAd())
         {
             showCompleteCB = callback;
