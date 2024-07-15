@@ -128,16 +128,13 @@ public class WinPopup : BasePopup
 
     private void NextLevel()
     {
-        //if (isShowAds && DataManager.UnlockNormalLevel >= Constans.SHOW_ADS_LEVEL)
-        //{
-        //    //AdmodManager.Instance.ShowInterstitial((t) => { GameManager.LoadGame(); });
-        //}
-        //else
-        //{
-        //    GameManager.LoadGame();
-        //}
-        GameManager.LoadGame();
-
-        //DataOneLoad.RateUsIndex++;
+        if (isShowAds && DataManager.UnlockNormalLevel >= Constans.SHOW_ADS_LEVEL)
+        {
+            AdsController.Instance.interstitical.ShowAd((t) => { GameManager.LoadGame(); });
+        }
+        else
+        {
+            GameManager.LoadGame();
+        }
     }
 }
