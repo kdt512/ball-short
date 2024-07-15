@@ -1,4 +1,3 @@
-using Newtonsoft.Json;
 using Spine.Unity;
 using System;
 using TMPro;
