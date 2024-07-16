@@ -71,8 +71,11 @@ public class WinPopup : BasePopup
     private void Click_CollectStar()
     {
         SoundManager.Instance.Play(SoundType.CLICK);
-        AdsController.Instance.rewarded.ShowAd((t) =>
+        AdManager.ShowRewardedVideoAd((t) =>
         {
+            if (!t)
+                return;
+
             isShowAds = false;
             DataManager.CurrentNormalLevel++;
             if (DataManager.UnlockNormalLevel < DataManager.CurrentNormalLevel)
@@ -127,16 +130,10 @@ public class WinPopup : BasePopup
 
     private void NextLevel()
     {
-        //if (isShowAds && DataManager.UnlockNormalLevel >= Constans.SHOW_ADS_LEVEL)
-        //{
-        //    //AdmodManager.Instance.ShowInterstitial((t) => { GameManager.LoadGame(); });
-        //}
-        //else
-        //{
-        //    GameManager.LoadGame();
-        //}
+        if (isShowAds && DataManager.UnlockNormalLevel >= Constans.SHOW_ADS_LEVEL)
+        {
+            AdManager.ShowInterstitialAd();
+        }
         GameManager.LoadGame();
-
-        //DataOneLoad.RateUsIndex++;
     }
 }

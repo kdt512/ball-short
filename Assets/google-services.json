@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "434802242754",
+    "project_id": "carparker3d-4cc52",
+    "storage_bucket": "carparker3d-4cc52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434802242754:android:2014f09c2cd5eeaa91f75b",
+        "android_client_info": {
+          "package_name": "com.tigergames.car.parker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434802242754-kaks3fin8u6lbccm0663591kekdprpij.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJLgIigPeCk_pboQsC7HkIKjkgEgEYt94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434802242754-kaks3fin8u6lbccm0663591kekdprpij.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-6883922941405501~1662667853"
+    }
+  ],
+  "configuration_version": "1"
+}
