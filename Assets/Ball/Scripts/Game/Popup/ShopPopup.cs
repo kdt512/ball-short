@@ -201,6 +201,7 @@ public class ShopPopup : BasePopup
 
             AdManager.ShowRewardedVideoAd((t) =>
             {
+                Debug.Log("SHOW REWARD " + t);
                 DataManager.COIN += DataProvider.Instance.coinShop;
                 EventDispatcher.PostEvent(EventId.UPDATE_COIN);
             });

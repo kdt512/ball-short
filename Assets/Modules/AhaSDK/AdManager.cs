@@ -60,6 +60,8 @@ public class AdManager : Singleton<AdManager>
         if (!isRewardedAdLoaded)
         {
             LoadRewardedAd();
+            var notiUI = UIManager.Instance.OpenUI<NotiPopup>(DialogType.POPUP_NOTI);
+            notiUI.ShowAsInfo("Oops!", "No ad to show. Try again latter!");
             //if (Commons.IsConnectionNetwork())
             //{
             //    Commons.ShowDialog("NOTIFY", "No ad to show. Try again latter!",
@@ -112,6 +114,7 @@ public class AdManager : Singleton<AdManager>
 
     public void OnRewarded(string message)
     {
+        Debug.Log("OnRewarded OnRewarded"+message);
         onRewardedAction?.Invoke(message == "rewarded");
         LoadRewardedAd();
     }

@@ -89,6 +89,8 @@ public class Bottle : MonoBehaviour
 
     public void OnInit(List<int> idItem, int idBottle2, bool isHideObj)
     {
+        Debug.Log(idBottle2 + " " + isHideObj);
+        Debug.Log(JsonUtility.ToJson(idItem));
         this.BottleBlinkRenderer.gameObject.SetActive(false);
         this.listMapIDItem = idItem;
         this.idBottle = idBottle2;

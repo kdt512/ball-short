@@ -81,7 +81,7 @@ public class WinPopup : BasePopup
             if (DataManager.UnlockNormalLevel < DataManager.CurrentNormalLevel)
             {
                 DataManager.UnlockNormalLevel = DataManager.CurrentNormalLevel;
-                FirebaseManager.Instance.LogEventLevelUp(DataManager.UnlockNormalLevel);
+                //FirebaseManager.Instance.LogEventLevelUp(DataManager.UnlockNormalLevel);
             }
 
             int index = LevelManager.Instance.StarClaimInLevel + 1;
@@ -99,7 +99,7 @@ public class WinPopup : BasePopup
         {
             isShowAds = true;
             DataManager.UnlockNormalLevel = DataManager.CurrentNormalLevel;
-            FirebaseManager.Instance.LogEventLevelUp(DataManager.UnlockNormalLevel);
+            //FirebaseManager.Instance.LogEventLevelUp(DataManager.UnlockNormalLevel);
         }
 
         DataProvider.Instance.starClaim = LevelManager.Instance.StarClaimInLevel;
