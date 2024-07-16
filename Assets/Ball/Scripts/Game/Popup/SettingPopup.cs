@@ -25,10 +25,6 @@ public class SettingPopup : BasePopup
 
     [SerializeField] private Sprite spriteMusicOff;
 
-    [SerializeField] private Button btnNoAds;
-
-    [SerializeField] private GameObject btnRestore;
-
 
     private void Start()
     {
@@ -36,9 +32,9 @@ public class SettingPopup : BasePopup
         UIMusic();
 
 #if UNITY_ANDROID
-        btnRestore.SetActive(false);
+        //btnRestore.SetActive(false);
 #else
-		btnRestore.SetActive(true);
+		//btnRestore.SetActive(true);
 #endif
     }
 
@@ -72,7 +68,7 @@ public class SettingPopup : BasePopup
     private void UINoAds()
     {
         imgBtnNoAds.sprite = DataManager.IsNoAds ? spriteBtnDisable : spriteBtnEnable;
-        btnNoAds.interactable = !DataManager.IsNoAds;
+        //btnNoAds.interactable = !DataManager.IsNoAds;
     }
 
 

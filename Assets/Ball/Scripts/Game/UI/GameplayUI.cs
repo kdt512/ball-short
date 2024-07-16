@@ -346,12 +346,12 @@ public class GameplayUI : MonoBehaviour
         {
             // watch reward ads
             Debug.LogError("RewardAds");
-            //AdmodManager.Instance.ShowReward((t) =>
-            //{
-            //    DataManager.CountTimerStar = 6;
-            //    sliderTimer.value = timerStarSlider;
-            //    ChangeViewStarTime(true);
-            //});
+            AdManager.ShowRewardedVideoAd((t) =>
+            {
+                DataManager.CountTimerStar = 6;
+                sliderTimer.value = timerStarSlider;
+                ChangeViewStarTime(true);
+            });
 
         }
         else
@@ -367,11 +367,11 @@ public class GameplayUI : MonoBehaviour
     {
         if (countTubeAdd > 0)
         {
-            //AdmodManager.Instance.ShowReward((t) =>
-            //{
-            //    countTubeAdd--;
-            //    LevelManager.Instance.AddTube();
-            //});
+            AdManager.ShowRewardedVideoAd((t) =>
+            {
+                countTubeAdd--;
+                LevelManager.Instance.AddTube();
+            });
         }
     }
 
