@@ -231,7 +231,9 @@ public class OpenGiftPopup : BasePopup
         }
 
         _gift.gameObject.SetActive(true);
+        Debug.Log("STAR 1: " + DataManager.STAR);
         DataManager.STAR -= 20;
+        Debug.Log("STAR 2: " + DataManager.STAR);
         EventDispatcher.PostEvent(EventId.UPDATE_STAR);
     }
 }

@@ -199,14 +199,11 @@ public class ShopPopup : BasePopup
             DataManager.IsDisableReward = true;
             StartCoroutine(ActionClickReward());
 
-            //AdmodManager.Instance.ShowReward((t) =>
-            //{
-            //    DataManager.COIN += DataProvider.Instance.coinAdsInShop;
-            //    EventDispatcher.PostEvent(EventId.UPDATE_COIN);
-            //});
-
-            DataManager.COIN += DataProvider.Instance.coinAds;
-            EventDispatcher.PostEvent(EventId.UPDATE_COIN);
+            AdsController.Instance.rewarded.ShowAd((t) =>
+            {
+                DataManager.COIN += DataProvider.Instance.coinAds;
+                EventDispatcher.PostEvent(EventId.UPDATE_COIN);
+            });
         }
     }
     public void OnClickItemShopUI(int id)

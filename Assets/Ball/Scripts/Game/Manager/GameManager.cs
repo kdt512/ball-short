@@ -22,7 +22,7 @@ public class GameManager : Singleton<GameManager>
         indexRateUs= DataManager.CurrentNormalLevel;
         DOVirtual.DelayedCall(1, () =>
         {
-            //AdmodManager.Instance.ShowBanner();
+            AdsController.Instance.banner.ShowAd();
         });
 
 #if UNITY_EDITOR

@@ -56,6 +56,7 @@ public class FirebaseManager : Singleton<FirebaseManager>
 
     public void LogEvent(string keyEvent, Parameter parameter)
     {
+        Debug.Log("LogEvent: "+keyEvent+"  "+ firebaseInitialized);
         if (!firebaseInitialized) return;
 
         Parameter[] adParams = new Parameter[]

@@ -98,9 +98,6 @@ public class MapManager : Singleton<MapManager>
 
     public MDLevel GetLevel(int value)
     {
-        Debug.LogError("1"+  baseLevel == null);
-        Debug.LogError("2" + baseLevel.baseLevels == null);
-        Debug.LogError("3" + baseLevel.baseLevels.Count  );
         return baseLevel.baseLevels[value];
     }
 }

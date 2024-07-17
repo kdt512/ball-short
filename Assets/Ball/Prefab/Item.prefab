@@ -53,7 +53,7 @@ MonoBehaviour:
   rig: {fileID: 2695221082888644046}
   col: {fileID: 8391065578643756202}
   objLock: {fileID: 4126785997943151980}
-  objUnlock: {fileID: 100539408993599515}
+  objUnlock: {fileID: 8318367504525707148}
 --- !u!58 &8391065578643756202
 CircleCollider2D:
   m_ObjectHideFlags: 0

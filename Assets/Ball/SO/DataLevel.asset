@@ -57,7 +57,7 @@ MonoBehaviour:
     countStarReward: 0
     claimStar: 3
     timePlayLevel: 0
-    isHideObject: 0
+    isHideObject: 1
   - nameLevel: LEVEL 6
     idLevel: 5
     countTube: 7
@@ -66,7 +66,7 @@ MonoBehaviour:
     countStarReward: 0
     claimStar: 3
     timePlayLevel: 0
-    isHideObject: 1
+    isHideObject: 0
   - nameLevel: LEVEL 7
     idLevel: 6
     countTube: 7
@@ -102,7 +102,7 @@ MonoBehaviour:
     countStarReward: 0
     claimStar: 3
     timePlayLevel: 0
-    isHideObject: 0
+    isHideObject: 1
   - nameLevel: LEVEL 11
     idLevel: 10
     countTube: 9
@@ -147,7 +147,7 @@ MonoBehaviour:
     countStarReward: 0
     claimStar: 3
     timePlayLevel: 0
-    isHideObject: 0
+    isHideObject: 1
   - nameLevel: LEVEL 16
     idLevel: 15
     countTube: 9
