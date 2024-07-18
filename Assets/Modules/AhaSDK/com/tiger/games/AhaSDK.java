@@ -14,7 +14,7 @@ import com.transsion.gamead.GameAdLoadListener;
 import com.transsion.gamead.GameAdRewardShowListener;
 import com.transsion.gamead.GameAdShowListener;
 import com.transsion.gamead.GameRewardItem;
-import com.transsion.gamead.impl.BannerAdView;
+import com.transsion.gamead.impl.TGBannerView;
 import com.unity3d.player.UnityPlayer;
 
 public class AhaSDK {
@@ -27,7 +27,7 @@ public class AhaSDK {
     private static boolean isBannerAdShown = false;
     private static boolean isRewardedRequest = false;
     private static Handler handler;
-    private static BannerAdView mTGBannerView;
+    private static TGBannerView mTGBannerView;
 
     public static void initialize(Application application) {
     }
@@ -48,7 +48,6 @@ public class AhaSDK {
     }
 
     public static void showPrivacyAgreement(Activity activity) {
-
     }
 
     public static void showFloatAds(Activity activity) {
@@ -81,6 +80,7 @@ public class AhaSDK {
     }
 
     public static void loadReward(Activity activity) {
+        Log.v(TAG, "load reward aha");
         if (isRewardedRequest) {
             return;
         }
@@ -164,6 +164,8 @@ public class AhaSDK {
     }
 
     public static void loadInterstitial(Activity activity) {
+        Log.v(TAG, "load inter aha");
+
         if (isInterstitialAdRequesting) {
             return;
         }
@@ -194,6 +196,8 @@ public class AhaSDK {
     }
 
     public static void showInterstitial(Activity activity) {
+        Log.v(TAG, "show inter aha");
+
         if (!isInterstitialAdLoaded || !AdHelper.isInterstitialReady()) {
             if (!isInterstitialAdRequesting) {
                 loadInterstitial(activity);
@@ -235,6 +239,8 @@ public class AhaSDK {
     }
 
     public static void loadBanner(Activity activity) {
+        Log.v(TAG, "load banner aha");
+
         activity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
@@ -242,9 +248,12 @@ public class AhaSDK {
                     return;
                 }
                 isBannerAdRequesting = true;
-
+                if(mTGBannerView==null){
+                    //TGBannerView only needs to be created once. This object can be used to perform various operations, such as displaying and closing ads.
+                    mTGBannerView = AdHelper.newInstanceTGBannerView(activity);
+                }
                 //Set the ad listener.
-                GameAdBannerListener listener = new GameAdBannerListener() {
+                mTGBannerView.setListener(new GameAdBannerListener() {
                     @Override
                     public void onAdFailedToLoad(int code, String message) {
                         Log.i(TAG, "Banner ad loading failed. Error code:" + code + "; error message:" + message);
@@ -274,13 +283,9 @@ public class AhaSDK {
                         //This callback exists for some ads.
                         isBannerAdShown = false;
                     }
-                };
-                if(mTGBannerView==null){
-                    //TGBannerView only needs to be created once. This object can be used to perform various operations, such as displaying and closing ads.
-                    mTGBannerView = AdHelper.getBannerView(activity,listener);
-                }
+                });
                 //Load the ad. (This method will automatically add the ad to the layout by default and display it in full at the bottom.)
-                mTGBannerView.load();
+                mTGBannerView.load(activity);
             }
         });
     }
@@ -290,12 +295,15 @@ public class AhaSDK {
     }
 
     public static void hideBanner(Activity activity) {
+        Log.v(TAG, "hide banner aha");
+
         //Close the banner ad.
-        mTGBannerView.close();
+        mTGBannerView.close(activity);
         //If you want to load the ad again after it is closed, you can use the mTGBannerView object and do not need to call the AdHelper.newInstanceTGBannerView API again.
         //mTGBannerView.load(this);
 
         //If you exit the game or the current page no longer needs to display the banner ad, call the API below to destroy the ad.
+        mTGBannerView.destroy(activity);
         mTGBannerView=null;
     }
 
