@@ -74,6 +74,7 @@ public class WinPopup : BasePopup
         SoundManager.Instance.Play(SoundType.CLICK);
         AdsController.Instance.rewarded.ShowAd((t) =>
         {
+            if (!t) return;
             isShowAds = false;
             DataManager.CurrentNormalLevel++;
             if (DataManager.UnlockNormalLevel < DataManager.CurrentNormalLevel)

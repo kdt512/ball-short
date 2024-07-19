@@ -201,6 +201,8 @@ public class ShopPopup : BasePopup
 
             AdsController.Instance.rewarded.ShowAd((t) =>
             {
+                if (!t) return;
+
                 DataManager.COIN += DataProvider.Instance.coinAds;
                 EventDispatcher.PostEvent(EventId.UPDATE_COIN);
             });

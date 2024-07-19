@@ -686,7 +686,7 @@ GameObject:
   - component: {fileID: 690245080}
   - component: {fileID: 690245081}
   m_Layer: 0
-  m_Name: Ads
+  m_Name: AdsController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
