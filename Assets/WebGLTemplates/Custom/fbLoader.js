@@ -1,0 +1,591 @@
+const a0_0x5095f0 = a0_0x14ca;
+(function (_0x5a7f9d, _0x1d2d38) {
+  const _0x242811 = a0_0x14ca,
+    _0x5e25f6 = _0x5a7f9d();
+  while (!![]) {
+    try {
+      const _0x23c891 =
+        (parseInt(_0x242811(0xde)) / 0x1) * (parseInt(_0x242811(0xf8)) / 0x2) +
+        (-parseInt(_0x242811(0x10b)) / 0x3) *
+          (parseInt(_0x242811(0x102)) / 0x4) +
+        (-parseInt(_0x242811(0x114)) / 0x5) *
+          (-parseInt(_0x242811(0xce)) / 0x6) +
+        (parseInt(_0x242811(0xcf)) / 0x7) *
+          (-parseInt(_0x242811(0x11b)) / 0x8) +
+        (-parseInt(_0x242811(0xdb)) / 0x9) *
+          (-parseInt(_0x242811(0xfc)) / 0xa) +
+        (parseInt(_0x242811(0xe4)) / 0xb) * (-parseInt(_0x242811(0xe8)) / 0xc) +
+        (parseInt(_0x242811(0xdf)) / 0xd) * (parseInt(_0x242811(0x10c)) / 0xe);
+      if (_0x23c891 === _0x1d2d38) break;
+      else _0x5e25f6["push"](_0x5e25f6["shift"]());
+    } catch (_0xf1de1f) {
+      _0x5e25f6["push"](_0x5e25f6["shift"]());
+    }
+  }
+})(a0_0x32ad, 0x85957);
+let BANNER_ADS_ID = "",
+  INTERSTITIAL_ADS_ID = "",
+  REWARD_VIDEO_ADS_ID = "",
+  REWARD_INTERSTITIAL_ADS_ID = "",
+  TIME_RELOAD_BANNER = 0x3c,
+  MIN_TIME_RELOAD_BANNER = 0x1e,
+  interstitialAd = null,
+  rewardVideoAd = null,
+  rewardInterstitialAd = null,
+  interstitialCallbackName = "",
+  rewardInterstitialCallbackName = "",
+  rewardVideoCallbackName = "",
+  isHideBanner = !![],
+  loadBannerIntervalId = 0x0,
+  lastLoadBannerTime = 0x0,
+  isInitSDK = ![],
+  isStartGameFbInstant = ![],
+  isSetupAds = ![],
+  playerId = "",
+  playerASID = "",
+  playerName = "";
+var sdkVersion = "",
+  platform = "",
+  supportAPIs = [],
+  TIME_BETWEEN_SAVE_DATA = 0x3c,
+  lastSaveDataTime = 0x0;
+(CustomLog = function (_0x407a90) {
+  const _0x462762 = a0_0x14ca;
+  console[_0x462762(0xcb)](_0x407a90),
+    myGameInstance &&
+      myGameInstance[_0x462762(0xc7)]("Bridge", _0x462762(0x11c), _0x407a90);
+}),
+  FBInstant[a0_0x5095f0(0xfe)]()
+    ["then"](function () {
+      const _0x1e3ea0 = a0_0x5095f0;
+      (isInitSDK = !![]),
+        (sdkVersion = FBInstant[_0x1e3ea0(0x115)]()),
+        (platform = FBInstant["getPlatform"]()),
+        (supportAPIs = FBInstant[_0x1e3ea0(0x112)]()),
+        FBInstant[_0x1e3ea0(0xf9)](function () {
+          const _0x31eb19 = _0x1e3ea0;
+          console[_0x31eb19(0xcb)](_0x31eb19(0xc2)), onPauseGame();
+        }),
+        (playerId = FBInstant["player"]["getID"]()),
+        (playerASID = FBInstant[_0x1e3ea0(0xfd)]
+          [_0x1e3ea0(0xf5)]()
+          [_0x1e3ea0(0xe2)](function (_0x357df5) {
+            const _0x426af8 = _0x1e3ea0;
+            console["log"](_0x426af8(0x118) + _0x357df5);
+          })),
+        (playerName = FBInstant[_0x1e3ea0(0xfd)]["getName"]()),
+        console["log"](
+          _0x1e3ea0(0xc5) +
+            sdkVersion +
+            _0x1e3ea0(0xf3) +
+            platform +
+            _0x1e3ea0(0x109) +
+            supportAPIs +
+            "playerName\x20" +
+            playerName +
+            _0x1e3ea0(0x106) +
+            playerId
+        ),
+        myGameInstance &&
+          (console[_0x1e3ea0(0xcb)](
+            "myGameInstance\x20initUnityGame\x20before"
+          ),
+          myGameInstance[_0x1e3ea0(0xc7)](
+            _0x1e3ea0(0xf7),
+            _0x1e3ea0(0xd9),
+            playerName
+          ),
+          FBInstant[_0x1e3ea0(0xd7)]()[_0x1e3ea0(0xe2)](function () {
+            const _0xb07f7 = _0x1e3ea0;
+            console[_0xb07f7(0xcb)](_0xb07f7(0xd2)),
+              (isStartGameFbInstant = !![]),
+              isSetupAds == !![] && preloadAds(),
+              readyPurchase();
+          }));
+    })
+    ["catch"](function (_0x3bb856) {
+      const _0x23d17e = a0_0x5095f0;
+      console[_0x23d17e(0xcb)](_0x23d17e(0xcd) + _0x3bb856["message"]);
+    });
+function showInterstitialAds(_0x2ca051) {
+  const _0x5833ac = a0_0x5095f0;
+  console[_0x5833ac(0xcb)](_0x5833ac(0x100)),
+    (interstitialCallbackName = _0x2ca051),
+    interstitialAd
+      ? interstitialAd[_0x5833ac(0xdc)]()
+          [_0x5833ac(0xe2)](function () {
+            const _0xe66d94 = _0x5833ac;
+            console[_0xe66d94(0xcb)](_0xe66d94(0x107)),
+              onShowInterstitialCallback(0x1),
+              preloadInterstitialAds();
+          })
+          [_0x5833ac(0xff)](function (_0x98c693) {
+            const _0x3264c5 = _0x5833ac;
+            console[_0x3264c5(0xcb)](
+              _0x3264c5(0xc3) + _0x98c693[_0x3264c5(0xf2)]
+            ),
+              onShowInterstitialCallback(0x2),
+              preloadInterstitialAds();
+          })
+      : (console[_0x5833ac(0xcb)](_0x5833ac(0xe3)),
+        preloadInterstitialAds(),
+        onShowInterstitialCallback(0x0));
+}
+function showVideoRewardAds(_0x1d75ad) {
+  const _0x5d1d94 = a0_0x5095f0;
+  console[_0x5d1d94(0xcb)](_0x5d1d94(0x111) + _0x1d75ad),
+    (rewardVideoCallbackName = _0x1d75ad),
+    rewardVideoAd
+      ? rewardVideoAd[_0x5d1d94(0xdc)]()
+          [_0x5d1d94(0xe2)](function () {
+            const _0x472771 = _0x5d1d94;
+            console[_0x472771(0xcb)](
+              "rewardVideoAd\x20ad\x20displayed,\x20accept"
+            ),
+              onShowRewardVideoCallback(0x1),
+              preloadRewardVideoAds();
+          })
+          [_0x5d1d94(0xff)](function (_0x4e6e71) {
+            const _0x239a3b = _0x5d1d94;
+            console[_0x239a3b(0xcb)](
+              _0x239a3b(0x10d) + _0x4e6e71[_0x239a3b(0xf2)]
+            ),
+              onShowRewardVideoCallback(0x2),
+              preloadRewardVideoAds();
+          })
+      : (console[_0x5d1d94(0xcb)]("rewardVideoAd\x20null"),
+        preloadRewardVideoAds(),
+        onShowRewardVideoCallback(0x0));
+}
+function showRewardInterstitialAds(_0x2e3cff) {
+  const _0x2520c0 = a0_0x5095f0;
+  console["log"](_0x2520c0(0xe9) + _0x2e3cff),
+    (rewardInterstitialCallbackName = _0x2e3cff),
+    rewardInterstitialAd
+      ? rewardInterstitialAd[_0x2520c0(0xdc)]()
+          [_0x2520c0(0xe2)](function () {
+            const _0x468fa0 = _0x2520c0;
+            console["log"](_0x468fa0(0xfa)),
+              onShowRewardInterstitialCallback(0x1),
+              preloadRewardInterstitialAds();
+          })
+          ["catch"](function (_0x5b10f8) {
+            const _0x22c18a = _0x2520c0;
+            console[_0x22c18a(0xcb)](
+              _0x22c18a(0xf4) + _0x5b10f8[_0x22c18a(0xf2)]
+            ),
+              onShowRewardInterstitialCallback(0x2),
+              preloadRewardInterstitialAds();
+          })
+      : (console[_0x2520c0(0xcb)](_0x2520c0(0xd6)),
+        preloadRewardInterstitialAds(),
+        onShowRewardInterstitialCallback(0x0));
+}
+function showBanner() {
+  const _0x13ad9 = a0_0x5095f0;
+  console[_0x13ad9(0xcb)](_0x13ad9(0x104)),
+    (isHideBanner = ![]),
+    loadBannerIntervalId != 0x0 &&
+      (clearInterval(loadBannerIntervalId), (loadBannerIntervalId = 0x0)),
+    preloadBannerAds(),
+    (loadBannerIntervalId = setInterval(
+      preloadBannerAds,
+      TIME_RELOAD_BANNER * 0x3e8
+    ));
+}
+function hideBanner() {
+  const _0x5ed541 = a0_0x5095f0;
+  console[_0x5ed541(0xcb)](_0x5ed541(0xea)),
+    (isHideBanner = !![]),
+    FBInstant[_0x5ed541(0xec)](),
+    loadBannerIntervalId != 0x0 &&
+      (clearInterval(loadBannerIntervalId), (loadBannerIntervalId = 0x0));
+}
+function onShowInterstitialCallback(_0x9c182) {
+  const _0xcc49e9 = a0_0x5095f0;
+  console[_0xcc49e9(0xcb)](_0xcc49e9(0x103));
+  if (interstitialCallbackName != "")
+    myGameInstance[_0xcc49e9(0xc7)](
+      "Bridge",
+      interstitialCallbackName,
+      _0x9c182
+    );
+}
+function onShowRewardInterstitialCallback(_0x233a73) {
+  const _0x1fc48d = a0_0x5095f0;
+  console[_0x1fc48d(0xcb)]("onShowRewardInterstitialCallback");
+  if (rewardInterstitialCallbackName != "")
+    myGameInstance["SendMessage"](
+      _0x1fc48d(0xf7),
+      rewardInterstitialCallbackName,
+      _0x233a73
+    );
+}
+function onShowRewardVideoCallback(_0x103969) {
+  const _0x14fa19 = a0_0x5095f0;
+  console[_0x14fa19(0xcb)](_0x14fa19(0x11a));
+  if (rewardVideoCallbackName != "")
+    myGameInstance[_0x14fa19(0xc7)](
+      _0x14fa19(0xf7),
+      rewardVideoCallbackName,
+      _0x103969
+    );
+}
+function onShareCallback(_0x13a17e) {
+  const _0x87b0f0 = a0_0x5095f0;
+  console[_0x87b0f0(0xcb)]("onShareCallback\x20" + _0x13a17e);
+  if (myGameInstance)
+    myGameInstance["SendMessage"](
+      _0x87b0f0(0xf7),
+      _0x87b0f0(0x108),
+      _0x13a17e ? 0x1 : 0x0
+    );
+}
+function onPauseGame() {
+  const _0x54fa45 = a0_0x5095f0;
+  console[_0x54fa45(0xcb)](_0x54fa45(0xdd));
+  if (myGameInstance)
+    myGameInstance[_0x54fa45(0xc7)]("Bridge", _0x54fa45(0xc9));
+}
+function setupAds(_0x4f330d, _0x2e06ef, _0x59ef74, _0x478d9b) {
+  (BANNER_ADS_ID = _0x4f330d),
+    (INTERSTITIAL_ADS_ID = _0x2e06ef),
+    (REWARD_INTERSTITIAL_ADS_ID = _0x59ef74),
+    (REWARD_VIDEO_ADS_ID = _0x478d9b),
+    (isSetupAds = !![]),
+    isStartGameFbInstant && preloadAds();
+}
+function preloadAds() {
+  preloadBannerAds(),
+    (loadBannerIntervalId = setInterval(
+      preloadBannerAds,
+      TIME_RELOAD_BANNER * 0x3e8
+    )),
+    preloadInterstitialAds(),
+    preloadRewardVideoAds(),
+    preloadRewardInterstitialAds();
+}
+function preloadInterstitialAds() {
+  const _0x2843ff = a0_0x5095f0;
+  FBInstant["getInterstitialAdAsync"](INTERSTITIAL_ADS_ID)
+    ["then"](function (_0x568ebf) {
+      const _0x52bab6 = a0_0x14ca;
+      return (interstitialAd = _0x568ebf), _0x568ebf[_0x52bab6(0xe5)]();
+    })
+    [_0x2843ff(0xe2)](function () {
+      const _0x16705d = _0x2843ff;
+      console[_0x16705d(0xcb)]("load\x20interstitial\x20done");
+    })
+    [_0x2843ff(0xff)](function (_0x56d649) {
+      const _0x16a2dd = _0x2843ff;
+      console[_0x16a2dd(0xcb)](_0x16a2dd(0xcc) + _0x56d649[_0x16a2dd(0xf2)]),
+        setTimeout(function () {
+          handleAdsNoFill(interstitialAd, 0x2);
+        }, 0x1e * 0x3e8);
+    });
+}
+function handleAdsNoFill(_0x25af16, _0x4110af) {
+  const _0x48659d = a0_0x5095f0;
+  if (_0x4110af > 0x3) return;
+  else
+    _0x25af16[_0x48659d(0xe5)]()
+      ["then"](function () {
+        const _0x2f145d = _0x48659d;
+        console["log"](_0x2f145d(0xc8));
+      })
+      [_0x48659d(0xff)](function (_0x4834ac) {
+        const _0x5718ea = _0x48659d;
+        console[_0x5718ea(0xf0)](_0x5718ea(0xe6) + _0x4834ac["message"]),
+          setTimeout(function () {
+            handleAdsNoFill(_0x25af16, _0x4110af + 0x1);
+          }, 0x1e * 0x3e8);
+      });
+}
+function preloadRewardInterstitialAds() {
+  const _0x2d26a8 = a0_0x5095f0;
+  if (REWARD_INTERSTITIAL_ADS_ID == "") return;
+  FBInstant[_0x2d26a8(0x10a)](REWARD_INTERSTITIAL_ADS_ID)
+    [_0x2d26a8(0xe2)](function (_0x4d9de0) {
+      const _0x19fc1a = _0x2d26a8;
+      return (rewardInterstitialAd = _0x4d9de0), _0x4d9de0[_0x19fc1a(0xe5)]();
+    })
+    [_0x2d26a8(0xe2)](function () {
+      const _0x5dc017 = _0x2d26a8;
+      console[_0x5dc017(0xcb)](_0x5dc017(0xee));
+    })
+    [_0x2d26a8(0xff)](function (_0x571177) {
+      const _0x2df03c = _0x2d26a8;
+      console[_0x2df03c(0xcb)](_0x2df03c(0x117) + _0x571177[_0x2df03c(0xf2)]);
+    });
+}
+function preloadRewardVideoAds() {
+  const _0x30288d = a0_0x5095f0;
+  FBInstant[_0x30288d(0xed)](REWARD_VIDEO_ADS_ID)
+    ["then"](function (_0xc4055f) {
+      const _0x4cd86d = _0x30288d;
+      return (rewardVideoAd = _0xc4055f), rewardVideoAd[_0x4cd86d(0xe5)]();
+    })
+    ["then"](function () {
+      const _0x26aa23 = _0x30288d;
+      console[_0x26aa23(0xcb)](_0x26aa23(0x110));
+    })
+    [_0x30288d(0xff)](function (_0x119342) {
+      const _0x20b924 = _0x30288d;
+      console[_0x20b924(0xcb)]("Rewared\x20VideoAd\x20load\x20fail"),
+        setTimeout(function () {
+          handleAdsNoFill(rewardVideoAd, 0x2);
+        }, 0x1e * 0x3e8);
+    });
+}
+function a0_0x14ca(_0x195035, _0x1d6a64) {
+  const _0x32ad84 = a0_0x32ad();
+  return (
+    (a0_0x14ca = function (_0x14ca48, _0x23af8c) {
+      _0x14ca48 = _0x14ca48 - 0xc2;
+      let _0x3204c4 = _0x32ad84[_0x14ca48];
+      return _0x3204c4;
+    }),
+    a0_0x14ca(_0x195035, _0x1d6a64)
+  );
+}
+function preloadBannerAds() {
+  const _0x4a44f0 = a0_0x5095f0;
+  var _0x5b8d5c = Math[_0x4a44f0(0xc6)](Date["now"]() / 0x3e8);
+  if (_0x5b8d5c - lastLoadBannerTime < MIN_TIME_RELOAD_BANNER) return;
+  (lastLoadBannerTime = _0x5b8d5c),
+    console[_0x4a44f0(0xcb)]("preloadBannerAds\x20" + _0x5b8d5c),
+    FBInstant["loadBannerAdAsync"](BANNER_ADS_ID)
+      ["then"](function () {
+        const _0x459335 = _0x4a44f0;
+        console["log"](_0x459335(0xf6)),
+          isHideBanner && FBInstant[_0x459335(0xec)]();
+      })
+      ["catch"](function (_0x183371) {
+        const _0x21550d = _0x4a44f0;
+        console[_0x21550d(0xf0)](
+          "Banner\x20failed\x20to\x20load:\x20" + _0x183371[_0x21550d(0xf2)]
+        );
+      });
+}
+function a0_0x32ad() {
+  const _0x557304 = [
+    "onShowRewardVideoCallback",
+    "184HTsDeE",
+    "ShowDebugInGame",
+    "Pause\x20event\x20was\x20triggered!",
+    "Interstitial\x20ad\x20failed\x20to\x20display:\x20",
+    "setDataAsync",
+    "sdkVersion\x20",
+    "floor",
+    "SendMessage",
+    "Interstitial\x20preloaded",
+    "OnPauseGame",
+    "saveData\x20",
+    "log",
+    "Interstitial\x20ad\x20failed\x20to\x20load:\x20",
+    "initializeAsync\x20error\x20",
+    "6TGjdRX",
+    "138894fNkvLB",
+    "Data\x20persisted\x20to\x20FB!",
+    "getPlatform\x20",
+    "startGameAsync\x20done",
+    "flushDataAsync",
+    "MESSENGER",
+    "shareAsync",
+    "rewardInterstitialAd\x20null",
+    "startGameAsync",
+    "getDataAsync",
+    "OnGetPlayerName",
+    "saveDataAndFlush\x20+\x20key\x20+\x20",
+    "492183jZRznu",
+    "showAsync",
+    "onShareCallback",
+    "53RqhssN",
+    "11259521KNsqGL",
+    "join",
+    "dont\x20saveData\x20",
+    "then",
+    "interstitialAd\x20null",
+    "33EQQatX",
+    "loadAsync",
+    "Interstitial\x20failed\x20to\x20preload:\x20",
+    "saveData\x20error\x20data\x20is\x20null",
+    "1947312mItXrZ",
+    "showRewardInterstitialAd\x20",
+    "hideBanner",
+    "GROUP",
+    "hideBannerAdAsync",
+    "getRewardedVideoAsync",
+    "load\x20reward\x20Interstitial\x20Ad\x20done",
+    "Play\x20this\x20Awesome\x20game",
+    "error",
+    "stringify",
+    "message",
+    ",\x20platform\x20",
+    "rewardInterstitialAd\x20ad\x20failed\x20to\x20display:\x20",
+    "getASIDAsync",
+    "loadBannerAdAsync\x20resolved.",
+    "Bridge",
+    "8900nLtuKO",
+    "onPause",
+    "rewardInterstitialAd\x20ad\x20displayed",
+    ".\x20Please\x20wait\x20for\x20",
+    "130VtwoQu",
+    "player",
+    "initializeAsync",
+    "catch",
+    "fbLoader\x20showInterstitialAd",
+    "Play\x20this\x20awesome\x20game,\x20can\x20you\x20beat\x20me?",
+    "6348ljtyGs",
+    "onShowInterstitialCallback",
+    "showBanner",
+    "NEWSFEED",
+    ",\x20playerId\x20",
+    "Interstitial\x20ad\x20displayed",
+    "OnShareCallback",
+    ",\x20supportAPI\x20",
+    "getRewardedInterstitialAsync",
+    "1164OYIGUP",
+    "14jpVSso",
+    "rewardVideoAd\x20ad\x20failed\x20to\x20display:\x20",
+    "COPY_LINK",
+    "\x20|\x20",
+    "load\x20rewardVideoAd\x20done",
+    "showVideoRewardAds\x20",
+    "getSupportedAPIs",
+    "...",
+    "1466055rmggin",
+    "getSDKVersion",
+    "+\x20data",
+    "Reward\x20Interstitial\x20ad\x20failed\x20to\x20load:\x20",
+    "asid\x20",
+    "getTime",
+  ];
+  a0_0x32ad = function () {
+    return _0x557304;
+  };
+  return a0_0x32ad();
+}
+function sharePlayLink() {
+  const _0x47fd17 = a0_0x5095f0;
+  let _0x5997c4 = BASE64_IMAGE;
+  FBInstant["shareAsync"]({
+    score: 0x3e8,
+    image: _0x5997c4,
+    text: "Play\x20this\x20Awesome\x20game",
+    data: { myReplayData: "..." },
+    shareDestination: [
+      _0x47fd17(0x105),
+      _0x47fd17(0xeb),
+      _0x47fd17(0x10e),
+      "MESSENGER",
+    ],
+    switchContext: !![],
+  })
+    ["then"](
+      function () {
+        onShareCallback(!![]);
+      },
+      function () {
+        onShareCallback(![]);
+      }
+    )
+    ["catch"](function (_0x51ad25) {
+      const _0x22fd3c = _0x47fd17;
+      console[_0x22fd3c(0xf0)](
+        "sharePlayLink\x20failed:\x20" + _0x51ad25[_0x22fd3c(0xf2)]
+      );
+    });
+}
+function shareScreen(_0x38f605) {
+  const _0x97a237 = a0_0x5095f0;
+  (_0x38f605 = "data:image/jpeg;base64," + _0x38f605),
+    FBInstant[_0x97a237(0xd5)]({
+      image: _0x38f605,
+      text: _0x97a237(0xef),
+      data: { myReplayData: _0x97a237(0x113) },
+      shareDestination: [
+        "NEWSFEED",
+        _0x97a237(0xeb),
+        "COPY_LINK",
+        _0x97a237(0xd4),
+      ],
+      switchContext: ![],
+    })["then"](function () {});
+}
+function invite() {
+  const _0x35b68a = a0_0x5095f0;
+  let _0x2cc496 = BASE64_IMAGE;
+  FBInstant["inviteAsync"]({
+    image: _0x2cc496,
+    text: _0x35b68a(0x101),
+    data: { invitedBy: playerId },
+  });
+}
+function isLoadedGameFbInstant() {
+  return isStartGameFbInstant;
+}
+function getPlatform() {
+  const _0x24d83e = a0_0x5095f0;
+  return console["log"](_0x24d83e(0xd1) + platform), platform;
+}
+function saveData(_0x2e0a1e, _0x3ff7b8) {
+  const _0x55f748 = a0_0x5095f0;
+  console["log"](_0x55f748(0xca) + _0x2e0a1e + _0x55f748(0x10f) + _0x3ff7b8);
+  var _0x52ba87 = new Date();
+  if (
+    _0x52ba87[_0x55f748(0x119)]() - lastSaveDataTime <
+    TIME_BETWEEN_SAVE_DATA * 0x3e8
+  ) {
+    console["log"](
+      _0x55f748(0xe1) +
+        _0x2e0a1e +
+        _0x55f748(0xfb) +
+        TIME_BETWEEN_SAVE_DATA +
+        "\x20seconds"
+    );
+    return;
+  }
+  if (_0x3ff7b8 == null) {
+    console[_0x55f748(0xcb)](_0x55f748(0xe7));
+    return;
+  }
+  var _0x4c208d = {};
+  (_0x4c208d[_0x2e0a1e] = _0x3ff7b8),
+    FBInstant["player"]
+      ["setDataAsync"](_0x4c208d)
+      [_0x55f748(0xe2)](FBInstant[_0x55f748(0xfd)][_0x55f748(0xd3)])
+      [_0x55f748(0xe2)](function () {
+        const _0x3f2b7f = _0x55f748;
+        console[_0x3f2b7f(0xcb)]("Data\x20persisted\x20to\x20FB!");
+      });
+}
+function saveDataAndFlush(_0xed9cd2, _0x14fb14) {
+  const _0x362062 = a0_0x5095f0;
+  console["log"](_0x362062(0xda) | _0x362062(0x116));
+  var _0x26b1e8 = {};
+  (_0x26b1e8[_0xed9cd2] = _0x14fb14),
+    FBInstant[_0x362062(0xfd)]
+      [_0x362062(0xc4)](_0x26b1e8)
+      [_0x362062(0xe2)](FBInstant[_0x362062(0xfd)][_0x362062(0xd3)])
+      [_0x362062(0xe2)](function () {
+        const _0x3951cc = _0x362062;
+        console[_0x3951cc(0xcb)](_0x3951cc(0xd0));
+      });
+}
+function loadData(_0x4cf951) {
+  const _0xef6208 = a0_0x5095f0;
+  console[_0xef6208(0xcb)]("loadData\x20" + _0x4cf951),
+    FBInstant[_0xef6208(0xfd)]
+      [_0xef6208(0xd8)]([_0x4cf951])
+      [_0xef6208(0xe2)](function (_0x2da148) {
+        const _0x3f7cb6 = _0xef6208;
+        var _0x4b9102 = JSON[_0x3f7cb6(0xf1)](_0x2da148[_0x4cf951]);
+        onLoadDataCompletely(_0x4cf951, _0x4b9102);
+      });
+}
+function onLoadDataCompletely(_0x1c4850, _0x1f99ac) {
+  const _0x2af18b = a0_0x5095f0;
+  var _0x10deab = [_0x1c4850, _0x1f99ac][_0x2af18b(0xe0)]("|");
+  myGameInstance["SendMessage"]("Bridge", "OnLoadDataCompletely", _0x10deab);
+}

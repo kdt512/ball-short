@@ -346,7 +346,7 @@ public class GameplayUI : MonoBehaviour
         {
             // watch reward ads
             Debug.LogError("RewardAds");
-            AdsController.Instance.rewarded.ShowAd((t) =>
+            AdsController.Instance.ShowRewardedVideoAd("Click_Star", (t) =>
             {
                 if (!t) return;
                 DataManager.CountTimerStar = 6;
@@ -369,7 +369,7 @@ public class GameplayUI : MonoBehaviour
         if (countTubeAdd > 0)
         {
 
-            AdsController.Instance.rewarded.ShowAd((t) =>
+            AdsController.Instance.ShowRewardedVideoAd("AddTube", (t) =>
             {
                 if (!t) return;
                 countTubeAdd--;

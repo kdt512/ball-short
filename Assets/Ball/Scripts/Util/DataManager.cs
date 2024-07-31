@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Newtonsoft.Json;
 using UnityEngine;
 
 public class DataManager
@@ -178,11 +177,13 @@ public class DataManager
     {
         if (PlayerPrefs.HasKey(key))
         {
-            return JsonConvert.DeserializeObject<List<T>>(PlayerPrefs.GetString(key));
+            //return JsonConvert.DeserializeObject<List<T>>(PlayerPrefs.GetString(key));
+            return JsonUtility.FromJson<List<T>>(PlayerPrefs.GetString(key));
         }
         else
         {
-            PlayerPrefs.SetString(key, JsonConvert.SerializeObject(defaultValue));
+            //PlayerPrefs.SetString(key, JsonConvert.SerializeObject(defaultValue));
+            PlayerPrefs.SetString(key, JsonUtility.ToJson(defaultValue));
             return defaultValue;
         }
     }
@@ -192,7 +193,9 @@ public class DataManager
     {
         var result = GetList(key, new List<T>());
         result.Add(value);
-        PlayerPrefs.SetString(key, JsonConvert.SerializeObject(result));
+        //PlayerPrefs.SetString(key, JsonConvert.SerializeObject(result));
+        PlayerPrefs.SetString(key, JsonUtility.ToJson(result));
+
     }
 
     public static void SetList<T>(string key, int index, T value)
@@ -203,6 +206,7 @@ public class DataManager
             result[index] = value;
         }
 
-        PlayerPrefs.SetString(key, JsonConvert.SerializeObject(result));
+        //PlayerPrefs.SetString(key, JsonConvert.SerializeObject(result));
+        PlayerPrefs.SetString(key, JsonUtility.ToJson(result));
     }
 }

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | {{{ PRODUCT_NAME }}}</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="https://connect.facebook.net/en_US/fbinstant.7.1.js"></script>
+</head>
+<body>
+    <div id="unity-container" class="unity-desktop">
+        <canvas id="unity-canvas" width={{{ WIDTH }}} height={{{ HEIGHT }}}></canvas>
+        <div id="unity-loading-bar">
+            <div id="unity-logo"></div>
+            <div id="unity-progress-bar-empty">
+                <div id="unity-progress-bar-full"></div>
+            </div>
+        </div>
+        <div id="unity-warning"> </div>
+    </div>
+	<script src="./Base64Image.js"></script>
+	<script src="./ConsumableProduct.js"></script>
+	<script src="./FbTournament.js"></script>
+    <script src="./fbLoader.js"></script>
+    <script src="./fbPurchase.js"></script>
+    <script>
+      var myGameInstance = null;
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var warningBanner = document.querySelector("#unity-warning");
+
+      // Shows a temporary message banner/ribbon for a few seconds, or
+      // a permanent error message on top of the canvas if type=='error'.
+      // If type=='warning', a yellow highlight color is used.
+      // Modify or remove this function to customize the visually presented
+      // way that non-critical warnings and error messages are presented to the
+      // user.
+      function unityShowBanner(msg, type) {
+        function updateBannerVisibility() {
+          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+        }
+        var div = document.createElement('div');
+        div.innerHTML = msg;
+        warningBanner.appendChild(div);
+        if (type == 'error') div.style = 'background: red; padding: 10px;';
+        else {
+          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+          setTimeout(function() {
+            warningBanner.removeChild(div);
+            updateBannerVisibility();
+          }, 5000);
+        }
+        updateBannerVisibility();
+      }
+
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/{{{ LOADER_FILENAME }}}";
+      var config = {
+        dataUrl: buildUrl + "/{{{ DATA_FILENAME }}}",
+        frameworkUrl: buildUrl + "/{{{ FRAMEWORK_FILENAME }}}",
+#if USE_WASM
+        codeUrl: buildUrl + "/{{{ CODE_FILENAME }}}",
+#endif
+#if MEMORY_FILENAME
+        memoryUrl: buildUrl + "/{{{ MEMORY_FILENAME }}}",
+#endif
+#if SYMBOLS_FILENAME
+        symbolsUrl: buildUrl + "/{{{ SYMBOLS_FILENAME }}}",
+#endif
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: {{{ JSON.stringify(COMPANY_NAME) }}},
+        productName: {{{ JSON.stringify(PRODUCT_NAME) }}},
+        productVersion: {{{ JSON.stringify(PRODUCT_VERSION) }}},
+        showBanner: unityShowBanner,
+      };
+
+      // By default Unity keeps WebGL canvas render target size matched with
+      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+      // Set this to false if you want to decouple this synchronization from
+      // happening inside the engine, and you would instead like to size up
+      // the canvas DOM size and WebGL render target sizes yourself.
+      // config.matchWebGLToCanvasSize = false;
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+        container.className = "unity-mobile";
+        canvas.className = "unity-mobile";
+
+        // To lower canvas resolution on mobile devices to gain some
+        // performance, uncomment the following line:
+        // config.devicePixelRatio = 1;
+
+      } else {
+        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+        container.className = "unity-mobile";
+        canvas.width = "{{{ WIDTH }}}px";
+        canvas.height = "{{{ HEIGHT }}}px";
+      }
+
+#if BACKGROUND_FILENAME
+      canvas.style.background = "url('" + buildUrl + "/{{{ BACKGROUND_FILENAME.replace(/'/g, '%27') }}}') center / cover";
+#endif
+
+    var script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = () => {
+        console.log("createUnityInstance");
+        createUnityInstance(canvas, config, (progress) => {
+            if (isInitSDK) FBInstant.setLoadingProgress(100 * progress);
+        }).then((unityInstance) => {
+            console.log("createUnityInstance done");
+            if (isInitSDK) {
+                FBInstant.startGameAsync()
+                    .then(function () {
+                        console.log("startGameAsync done");
+                        isStartGameFbInstant = true;
+                        if (isSetupAds == true) {
+                            preloadAds();
+                        }
+
+                        let entryPointData = FBInstant.getEntryPointData();
+                        console.log("entryPointData " + entryPointData);
+
+                        // init iap
+                        readyPurchase();
+                    });
+            }
+            myGameInstance = unityInstance;
+
+            if (playerName != "") myGameInstance.SendMessage('Bridge', "OnGetPlayerName", playerName);
+            if (remainPurchases.length > 0){
+                consumeAllRemainPurchase();
+            }
+        }).catch((message) => {
+            alert(message);
+        });
+    };
+    document.body.appendChild(script);
+
+    </script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCzj3E3E_oKbDG32GnT9Dg8UiOxQOK3-80",
+            authDomain: "slideee-block-puzzle.firebaseapp.com",
+            databaseURL: "https://slideee-block-puzzle-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "slideee-block-puzzle",
+            storageBucket: "slideee-block-puzzle.appspot.com",
+            messagingSenderId: "427374013872",
+            appId: "1:427374013872:web:77950cc7ae75cc5ecd3a75",
+            measurementId: "G-PKZGKVGKP3"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNLWTBGY2V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GNLWTBGY2V');
+    </script>
+</body>
+</html>

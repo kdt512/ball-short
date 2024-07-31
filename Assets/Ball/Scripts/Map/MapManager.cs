@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using Newtonsoft.Json;
 
 public class MapManager : Singleton<MapManager>
 {
@@ -87,12 +86,13 @@ public class MapManager : Singleton<MapManager>
                     baseLevel.baseLevels.Add(data);
                 }
             }
-            string str = JsonConvert.SerializeObject(baseLevel);
+            string str = JsonUtility.ToJson(baseLevel);
             PlayerPrefs.SetString(Constans.DATA_LEVEL, str);
         }
         else
         {
-            baseLevel = JsonConvert.DeserializeObject<MDBaseLevel>(PlayerPrefs.GetString(Constans.DATA_LEVEL));
+            //baseLevel = JsonConvert.DeserializeObject<MDBaseLevel>(PlayerPrefs.GetString(Constans.DATA_LEVEL));
+            baseLevel = JsonUtility.FromJson<MDBaseLevel>(PlayerPrefs.GetString(Constans.DATA_LEVEL));
         }
     }
 

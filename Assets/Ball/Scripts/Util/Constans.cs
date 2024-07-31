@@ -1,5 +1,13 @@
 public class Constans
 {
+    public const string CURRENT_DATA = "PARKING_CAR_CURRENT_DATA";
+    public const string LEVEL_INFO_DATA = "PARKING_CAR_LEVEL_INFO_DATA";
+    public const string ITEM_COIN_HAD_BOUGHT = "ITEM_COIN_HAD_BOUGHT";
+    public const string HAD_VIEW_GUIDE = "HAD_VIEW_GUIDE";
+    public const string HAD_GET_REWARD_TOUR = "HAD_GET_REWARD_TOUR";
+    public const string ARCHIVE_LEADERBOARD_DATE = "ARCHIVE_LEADERBOARD_DATE";
+    public const string LOCAL_DATA = "LOCAL_DATA";
+
     public const float DURATION_MOVE_PER_UNIT = 0.042f;
     public const float NUM_LEVELS = 500;
     public const int SHOW_ADS_LEVEL = 4; // level start show ads

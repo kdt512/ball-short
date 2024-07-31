@@ -1,4 +1,3 @@
-using Newtonsoft.Json;
 using Spine.Unity;
 using System;
 using TMPro;
@@ -72,7 +71,7 @@ public class WinPopup : BasePopup
     private void Click_CollectStar()
     {
         SoundManager.Instance.Play(SoundType.CLICK);
-        AdsController.Instance.rewarded.ShowAd((t) =>
+        AdsController.Instance.ShowRewardedVideoAd("CollectStar", (t) =>
         {
             if (!t) return;
             isShowAds = false;
@@ -80,7 +79,6 @@ public class WinPopup : BasePopup
             if (DataManager.UnlockNormalLevel < DataManager.CurrentNormalLevel)
             {
                 DataManager.UnlockNormalLevel = DataManager.CurrentNormalLevel;
-                FirebaseManager.Instance.LogEventLevelUp(DataManager.UnlockNormalLevel);
             }
 
             int index = LevelManager.Instance.StarClaimInLevel + 1;
@@ -98,7 +96,6 @@ public class WinPopup : BasePopup
         {
             isShowAds = true;
             DataManager.UnlockNormalLevel = DataManager.CurrentNormalLevel;
-            FirebaseManager.Instance.LogEventLevelUp(DataManager.UnlockNormalLevel);
         }
 
         DataProvider.Instance.starClaim = LevelManager.Instance.StarClaimInLevel;
@@ -131,7 +128,10 @@ public class WinPopup : BasePopup
     {
         if (isShowAds && DataManager.UnlockNormalLevel >= Constans.SHOW_ADS_LEVEL)
         {
-            AdsController.Instance.interstitical.ShowAd((t) => { GameManager.LoadGame(); });
+            AdsController.Instance.ShowInterstitialAd("NextLevel", () =>
+            {
+                GameManager.LoadGame();
+            });
         }
         else
         {

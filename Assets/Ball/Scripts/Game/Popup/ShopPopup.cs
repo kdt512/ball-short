@@ -199,7 +199,7 @@ public class ShopPopup : BasePopup
             DataManager.IsDisableReward = true;
             StartCoroutine(ActionClickReward());
 
-            AdsController.Instance.rewarded.ShowAd((t) =>
+            AdsController.Instance.ShowRewardedVideoAd("GetCoinAds", (t) =>
             {
                 if (!t) return;
 
